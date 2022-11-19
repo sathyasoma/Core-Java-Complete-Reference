@@ -1,0 +1,2658 @@
+
+language:
+=========
+if we want to communicate with person we use language
+  english,hindi telugu.
+types of languages:
+  communication
+  sign language
+  programming langauage
+ 
+ programming langauge:
+   if we wnat to communicate with the machine to perform action we use programming language.
+   
+By using programming langauages we can creete softwares/ applications
+    atm applications
+	billing applications
+	calculator applications.
+
+in industry which type of applications they are using?
+  two types of applications athey are using.
+       standalone applications
+	   distributed applications.
+standalone applications:
+   the application which we can run on our machine without using any network.
+      eg: vlc, adobreader
+	 standalone apllications are are wont shareble across the globe.
+Distributed applications:
+  the application which it can run on network is called distributed applications
+    eg: gmail, facebook
+	distributed applications are shareble across the globe.
+
+java:
+ java is object oriented programming langauage  for the purpose of creating standalone and
+distributed applications.
+
+=>java was introduced in 1995 by james gosling, from sunmicrosystem in the teal of 13 memebers.
+
+types of programming languages?
+ procedure oriented language: c, colblt
+ object oriented language: c++, java, python, .net
+ scripting oriented language
+ modula oriented language: modula
+ 
+ 
+procedure oriented languages rae old and those have some limitations with the security and 
+ performance.
+   To over come those limitations we enterd object oriented language, many langauges are using 
+oops.
+ java is one of the objet oriented langauges.
+ 
+ what are the features of java?
+   1.platform independent
+   2.garbage collector
+   
+paltaform independent:
+      in any programming we write source code and that source code converted into byte code.
+	  some "OS" operating sysytems are dependent, but java is not dependent os it is indipendent
+there is one slogan about java"WORA"(write once run anywhere)
+  because of theat the byte of java can run any machine i.e linux, unix windows anywhere it can run
+ 
+2.Garbage collection:
+====================
+IN the procedure oriented languages we are seperatly write the code for garabage collection but not
+in java.
+  why?
+   for suppose we create 1000 variables with in that we are only used 5 variables remaing variables are 
+have some memory space its waste. without using of those variables it is completly going to low
+performance and memory waste, at that time garabage collector collect the unwanted data send to the garabage 
+collection.
+  This process is done automatically.
+  
+these are the main features of java''
+
+
+charecteristics/buzz words/features of java
+=========================================
+simple
+Architetural neutral
+multithreaded
+distributed
+platform independent
+robust
+network based
+;
+;
+
+
+the present version of java is se 16
+ standard version is java se 8
+ every 3 months java will be updated version is comming
+ 
+recently the copyrights of sunmicrosystem owns by the "oracle corporation"
+
+
+=java introduced into the market in three editions;
+  JSE
+  JEE
+  JME
+java standard edition: we can develope standalone applications(core java)
+java enterprise edition: we can develope both standalone and distributed applications(advance java)
+java micro edition: we can develope mobile applications/android applications.
+
+
+
+java is free software 
+it is open source 
+official website is :www.oracle.com
+
+
+
+
+prerequisites for java:
+======================
+c program=> c software=> turbo calculator
+
+cpp program=>cpp software=>tubo cpp
+
+java program =.java software=>jdk
+
+download the jdk 8 file from www.oracle.com
+install the jdk file
+selct the editors=notepad,notepad++,eclips, netbeans
+write the java program
+save the java program(filename.java)
+compile the java program
+execute/run  thejava program
+
+
+once you install the jdk weather its installed or not we need to check
+  for that open the
+        command prompt (java - version)
+
+java version "1.8.0_221"
+Java(TM) SE Runtime Environment (build 1.8.0_221-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.221-b11, mixed mode)
+
+
+if you get like this java was installed succesfully.
+
+structire of java programm:
+============================
+
+class classname{
+
+//main method
+public static void main(String args[]){
+
+//logic
+System.out.println("welcome to java");
+
+}// method closing
+
+}//classs closing
+
+
+
+java eg:
+========
+
+
+class Test{
+
+ public static void main(String rags[]){
+ 
+ System.out.println("welcome to java");
+ 
+ 
+ }
+
+}
+
+To save: filename .java (.java is extension filename)
+
+after save the java file we have to compile the java program for that we need to compile
+
+compilation:
+=============
+the program which we written is user understandable language, but machine cannot cannot understand 
+that langauge. we need to convert user language to machine langauge.
+   for that we need compiler
+     compile will convert the source code to bute code
+
+here source code is .java               byte code .class
+
+ .java                compiler            .class
+ source code                            bytecode
+ 
+ what is bytecode?
+  byte code is machine understandable language binery code 0's and 1'save
+ 
+ Here compiler will convert the source code to byte code, this byte is understand by the 
+ machine(i.e JVM).
+ jvm will convert the byte code to machinelevel code.
+ 
+ 
+ compilation:    (javac filename.java)
+ 
+ execution:    java filename
+ 
+ whenever 1st program we need to run there is a problem?
+  
+    D:\jse>javac Welcome.java
+'javac' is not recognized as an internal or external command,
+operable program or batch file.
+
+  if you get like this therse is need of "path"
+
+path?
+  where all the java tools are avialble
+  
+path:
+c:programfiles/java/jdk 1. 8 .08/bin;
+
+path can be set in two ways
+ temporary
+  permananent
+  
+  temporary way is set in the cmd
+  permananent way is 
+  my computer=properties=advanced seeting=environmental variable=variable: path; path:c:---
+
+
+after setting the path you can execute easily without getting any errors.
+
+Variables:
+===========
+variable is name of staorage location.
+
+for example some one called you ryt now and if youwant call to that person after three days how 
+can you call( there is two ways)
+  that number saved in your mind
+  number saved in your phone
+     for that we need confirm memory ryt.
+here phone number is the value and saved by a name i.e variable.
+
+syntax:   <datatype><variablename>= value/data;
+
+
+
+here we have one concept
+datatype?
+what is datatype?
+  the type of data whic we can store in variable depend upon the which type of data we can stored 
+based on datatype.
+
+two type of datatypes
+   primitive datatypes
+   non primitive datatypes
+   
+primitive datatypes:
+
+categorized into 4 types
+Integer category
+float catogery
+charecter category
+boolean catogery
+
+
+Integer catogery:
+in the integer catogey we can store only numbers
+byte
+short
+int
+long
+why we have 4 types of integers?
+  based on size or length of the integers it can store.
+
+float catogery:
+ these are used to store decimal values based on the size it can store.
+float 
+double
+
+charecte catogery:
+  only we can stor single charecter
+char
+
+boolean:
+we can use based on the condition that is true or false 
+
+  true false
+
+
+Non primitive datatypes:
+ String, array
+
+based on size the dataypes can be differentiated
+
+we have 8 primitive datatypes.
+
+byte: byte is used to store small numbers
+range of byte is -128 to +127
+size:1byte
+
+short:
+range is: -32468 to 32467
+size:2 bytes
+we have onle formula to get range of each datatype.
+not recomndedd to remember range of the dattype
+
+formula:: -2(n-1)  to 2(n-1) -1
+
+int:
+
+int datatype is mostly used in programms
+size: 4 byts
+
+
+long:
+
+size: 8 byts
+
+float and double are used for decimals
+float:
+size: 4bytes
+we can store 4 to 5 numbers after decimal point
+double:
+size: 8bytes
+we can stor 8 to 17 numbers we can store after decimal point.
+char:
+size: 2bytes
+
+boolean: 1 bit
+
+
+java identifiers:
+-----------------
+identifier is nothing but method name, variblename, class name
+
+eg:
+---
+
+class Test{
+
+public static void main(String args[])
+
+int a=12;
+Sysout(a);
+
+}
+
+
+Test: identifier(class name)
+
+main: identifer (methodname)
+
+a: identifier(variable name)
+
+
+rules for identifiers:
+===================
+only allowed charecters for idenfirs are
+a to z
+A to Z
+0 to 9
+$
+_
+
+above only charecters and special cgarecrers are allowed to write the program
+
+name should be start with the charecter depends on class name, variable name, method name
+
+java is case sensitive.
+
+method can start : lowercases
+
+java has : 53 keywords
+
+all keywords in java are lowercase only
+
+class shoould be in start with capital letter.
+
+java using UNICODE formate
+ascii code charecters havong number for every charecter
+
+variables are two types;
+
+loal variable
+global variabe
+       instance variable
+	   static variable
+
+local variable:
+  declared with in themethod only
+Global variable:
+   declared with in the class out side the method 
+
+method:
+=======
+method is the location where we write our logic to perform action basedon our requirment.
+
+methods also instance and static methods same as variables.
+
+
+there are main 4 differences properties( variables, methods)
+
+syntax:
+the properties which are having static keyword called static properties.
+with out static properties is called no-static or instance
+
+memory allocation:
+static properties will be allocated at the time of class loading into jvm
+instance properties will get at the time of object creation
+
+how to access:
+static properties will access by using clas name
+instance properties will acess by using object reference.
+
+when to use:
+whenever common properties go for static
+whever unique properties go for instance.
+
+we are using IDE (eclips) where we have lot of advantages compare to notepad
+in the notepad everything we have to write But in the eclips it gives the suggestion and shortcuts.
+
+download the eclips.
+install the and open the eclips
+
+open: open perspective: set as : java
+open: file: new: java project
+write the project name and create the package=> create the class: write the class
+
+
+class:
+=====
+class is collection of variabls and member methods, make single unit is called classs
+
+  every programme starts with "class"
+    java program alwys start with by defining a class.
+	  java program alwys statrt with the main method only.
+	  
+	  
+	  class Test{
+	  int a=23;  //variable
+	  
+	     public static void main(String rags[]){  // method
+		    
+			System.out.println("welcome to java");
+		 }
+	  }
+  object:
+  ======
+  instance of a class called object: allocating suffiecient memory space for variabels and methods 
+  
+
+example variables and methods:
+================================
+
+
+class Test{
+  int x=10;   //instance variable
+  static int y=20;  //static variable
+
+public void add(){  // instance method without params
+System.out.println("instance method without parametrs and without rtrntype");
+}
+public void add1(int a, int b){ // instance method with params
+System.out.println("instance method with params,with paramtrs"+(a+b))
+
+}
+public int add2(int a, int b){
+
+return a+b;
+}
+
+public static void sub(){
+System.out.println("static method witout params,withots rtrn type");
+}
+
+public static void sub1(int a, int b){
+System.out.println("static method with parms,without rtentype"+(a-b));
+}
+
+public static int sub2(int a, int b){
+return a-b
+}
+public static void main(String args[]){          //main method
+int a= 23;
+System.out.println(a);// local varible calling
+//object creation
+
+Test obj= new Test();
+
+//we can call instance variable and methods by using obj reference
+obj.add();
+obj.add1(5,7);
+System.out.println(obj.add2(45,25));
+
+Test.sub();
+Test.sub1(45,17);
+System.out.println(Test.sub2(78,65));
+
+System.out.println(obj.x);
+Sytem.out.println(Test.y);
+
+}
+}
+
+Comments in java:
+===============
+comments are in java used to read the code properly and expalanation about the code understanding
+of the code correctly by using comments only.
+ comments wont compile by the compiler.
+Comments are two types
+  single line comments  // these ara single line comments
+  multi line comments /*   ------*/
+  
+
+
+
+Commandline Arguments:
+=======================
+in the main method we used String as parameter why?
+   as a end user given any value that is take as string, even you give int or anything it will 
+convert String.
+
+  Befor that we need to basic of arrays
+  array is started with always index 0
+  length of array is length-1;
+  how to define array:
+           int x[]= new int[1,45,25];
+		   
+command line arment means in the main method args[] in array format, if you pass any value it will take
+in array format onley.
+
+class Test{
+     
+	 public static void main(String rags[]){
+	    
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		
+	 
+	 }
+}
+
+from the console: run as : Run Configuration: argguments
+  
+   pass any two values i.e any datatype it will take as string convert which datatype you enterd.
+
+But one limitation with the command line argments
+        arthematic operations are not working in command line argments
+		   if you pass two nums it will take string and print like concatanation
+	eg:
+	
+        System.out.println(args[0]);
+		System.out.println(args[1]);		  
+
+  // values : 120 45
+  
+  
+  required output: 165
+  but 
+  original output: 12045  like concating it will take "120" "45"  12045
+  
+ For that we convert string to integer
+    we use wrapper class
+Wrapper classes:
+================
+Wrapper Class will convert primitive data types into objects. The objects are necessary 
+if we wish to modify the arguments passed into the method (because primitive types are passed by value).
+  
+  by using wrapper classes we can arithematic operations.
+  we have 8 primitive datatypes that many we have wrapper classes
+  
+  primitive datataype                 wrapper classes
+  
+        byte                          Byte
+		short                         Short
+		int                           Integer
+		long                          Long
+		float                         Float
+		double                        Double
+		char                          Charecter
+		boolean                       Boolean
+		
+		eg:
+		
+		class Test{
+     
+	 public static void main(String rags[]){
+	    
+		
+		int fnum=Integer.parseInt(args[0]);
+		int snum=Integer.parseInt(args[1]);
+		int c=fnum+snum;
+		System.out.println(c);
+	 
+	 }
+}
+  
+  remaing wrapper classes:
+  -------------------
+  byte b=Integer.parseByte(args[0]);
+  short s=Integer.parseShort(args[0]);
+  int i=Integer.parseInt(args[0]);
+  long l=Long.parseLong(args[0]);
+  float fnum=Float.parseFloat(args[0]);
+  double fnum=Double.parseDouble(args[0]);
+  boolean fnum=Boolean.parseBoolean(args[0]);
+  
+  
+  
+  
+  
+  
+  
+Control statements:
+====================
+control statements used to control the flow of the execution based on the given condition.
+
+categorized into three types
+  *conditional statements
+  *looping statements
+  *jump statements
+
+condtional statements:
+  conditional statements are used basedon condtions
+  in the conditional statemnts braces are optional
+   here we have 
+     if
+	 ifelse
+	 elseif
+	 nested if
+	 switch
+	 
+	 
+if:
+it evalueates the booelan expression and enables the program to enter block of code, if the 
+condition is true.
+
+class Test{
+     
+	 public static void main(String rags[]){
+	    int a=100;
+		int b=200;
+		if(x+y>200)
+		{
+		System.out.println("sum is greater than 200");
+		}
+	 
+	 }
+}
+
+
+if else:
+========
+if the given condition is true it enters one block of code  otherwise enters else block of code.
+
+
+
+class Test{
+     
+	 public static void main(String rags[]){
+	    int a=100;
+		int b=200;
+		if(x+y<200)
+		{
+		System.out.println("sum is greater than 200");
+		}
+		else
+		{
+		System.out.println("sum is not gretaer tahn 200");
+		}
+	 
+	 }
+}
+
+
+elseif:
+======
+if the given condion having multiple options to check by using elseif we can use elseif 
+
+
+
+
+class Test{
+     
+	 public static void main(String rags[]){
+	    
+		String city="delhi";
+		
+		if(city=="meerut")
+		{
+		System.out.println("city is meerut");
+		}
+	 else if(city=="hyd")
+	 {
+	 System.out.println("city is hyd");
+	 }
+	 else if(city=="goa"){
+	 System.out.println("city is goa");
+	 
+	 }
+	 
+	 else{
+	 System.out.println("city is delhi");
+	 }
+	 }
+}
+
+
+switch:
+=======
+a switch statemnt a variable to test with multiple values.
+
+
+int age=30;
+
+switch(age)
+{
+case 10:
+  System.out.println("age is 10");
+  break;
+case 15:
+  System.out.println("age is 15");
+  break;
+case 20:
+  System.out.println("age is 20");
+  break;
+case 30:
+  System.out.println("age is 30");
+  break;
+default:
+  System.out.println("alwys executes");
+ 
+}
+
+
+looping statements:
+===================
+if we want iterate the one statement number of times to iterate we need looping.
+by given condtion it will iterate thenumber of times basedon the condition.
+
+In programming languages, loops are used to execute a set of instructions repeatedly when some
+ conditions become true.
+
+for Loop
+while loop
+do- while
+
+
+for loop:
+=========
+it is used to iterate a part of  the program several times 
+
+if thenumber of iterations are fixed it is reccomnded to use for loop.
+
+for(initilizing;condition;incremnt/decremnt){
+  //code to be executed
+}
+
+
+eg:
+--
+
+
+class Test{
+     
+	 public static void main(String rags[]){
+	 //printing 1 to 10 numbers
+	 for(int i=1;i<=10;i++)
+	 {
+	 System.out.println(i);
+	 }
+	 
+	 }}
+
+while loop:
+===========
+if the number of iterations are not fixed then we go for while loop.
+
+syntax:
+
+while(condition)
+{
+//code to be execute
+increment/decrement;
+}
+
+
+int i=100;
+while(i>1)
+{
+
+System.out.println(i);
+i++;
+}
+
+eg:
+
+
+write a java program for displaying 1000 to 500 in reverse order?
+
+
+public class Test8 {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		int i=1000;
+
+
+		while(i>=500)
+		{
+
+		System.out.println(i);
+		i--;
+
+		
+		}
+		
+		
+	}
+	
+	
+do while:
+========
+
+
+do-while loop:
+````
+it is used to iterate a part of the program several times.
+
+
+if the number of iteration is not fixed and you must
+have to execute the loop at least once, it is recommended
+to use do-while loop.
+
+icici --> at last it asks for pin number(do-while)
+
+sbi --> initially it asks for pin number(while)
+
+java do-while loop is execute at least once because 
+condition is checked after loop body.
+
+
+syntax:
+``
+             do{
+			 
+			    //code to be executed
+			 }
+			 while(condition);
+
+
+write a java program for displaying 1 to 10 numbers
+using do-while loop?
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		// do-while loop
+		int i = 1;
+		do {
+			System.out.println(i);
+			i++;
+
+		} while (i<=10);
+	}
+
+}
+
+
+->
+write a java program for displaying 20 to 10 numbers
+in reverse order using do-while loop?
+
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		int i=20;
+
+		do{
+		 System.out.println(i);
+		  i--;
+		 }
+		 while (i>=10);
+	}
+
+}
+
+
+jumping statements:
+=====================
+
+
+
+
+
+
+
+
+
+
+
+
+OOPS:
+=====
+we are alrdy discussed java is object oriented programming language
+  then what is the difference between oops and oopl?
+    oops is the methodlogies which are given by the "OMG"(object managament group) those 
+methodlogies apllied in the language i.e oopl
+
+what are the features of oops?
+there are mainly four features of oops.
+*inheritance
+*polymorphism
+*abstraction
+*encapsulation
+
+
+In the four features 1st two related to the "performance" and next two related to "security".
+
+ for suppose i have a class, i have 10 methods and i want remaing methods but those are in other 
+projecct class, 1000 methods. 
+   If i want use those 1000 methods into my class, 
+        okay i can write but  i have 100 childs classes for that i need to write 100 child 
+class 1000 methods, it impossible to write.
+
+
+class Parent{
+
+//1000 methods
+
+}
+class myclass{
+
+//10 methods
+//1000 methods
+}
+
+
+ for we have one concept Inheritance
+ 
+ Inheritance:
+ ============
+Inheritance is the concept of aquiring properties from parent to child is called inheritance.
+                                                       Super class to sub class.
+													   Base class to derived class
+
+by using two keywords we can achieve inheritance "extends"  "implemnts"
+
+the main function or use of inheritance is "code reusebilty"
+
+inheritance we have types
+  single level
+     multi level
+	   hyrarchial level
+	       hybrid level
+		      multiple inheritance
+			  
+Single level:
+=============
+single level inheritance aquiring properties from parent to child.
+  here one parent and one child
+
+class Parent{
+
+public void property()
+{
+System.out.println("parent has 100 crore property");
+}
+
+public void house()
+{
+ System.out.println("parent has duplex house");
+}
+
+}  
+public class Child{
+
+public void right()
+{
+System.out.println("child has rights to takeover fathers property");
+}
+public static void main(String args[]){
+
+// objet creation
+Child obj= new Child();
+
+obj.house();
+obj.property();
+obj.right();
+}
+}
+			  
+			  
+			  
+=> if parent properties comes to child by using "extend " keyword			  
+			  whenever we use extends all properties from parent child class inherited
+			    now crete the child class object and call the all methods
+			  
+multilevel inheritance:
+=========================
+in the multilevel inheritance we have two parents and two childs that means
+super parent====parent-====child
+   
+     Here parent is act as like child of super parent and parent of child.
+			  
+			  
+class SuperParent{
+
+public void old(){
+
+System.out.println("becaze of superparent am old")
+}
+
+}		  
+
+
+class Parent extends{
+
+public void property()
+{
+System.out.println("parent has 100 crore property");
+}
+
+public void house()
+{
+ System.out.println("parent has duplex house");
+}
+
+}  
+public class Child{
+
+public void right()
+{
+System.out.println("child has rights to takeover fathers property");
+}
+public static void main(String args[]){
+
+// objet creation
+Child obj= new Child();
+
+obj.house();
+obj.property();
+obj.right();
+
+//from super parent
+
+obj.old();
+}
+}
+	
+   
+hyrarchial inheritance:
+========================
+here we have two parents and one child
+
+if child wants to properties from only one parent we can choose anyone parent.
+
+aquiring properties from any parent to child.
+
+
+
+
+			  
+class SuperParent{
+
+public void old(){
+
+System.out.println("becaze of superparent am old")
+}
+
+}		  
+
+
+class Parent {
+
+public void property()
+{
+System.out.println("parent has 100 crore property");
+}
+
+public void house()
+{
+ System.out.println("parent has duplex house");
+}
+
+}  
+public class Child extends SuperParent{
+
+public void right()
+{
+System.out.println("child has rights to takeover fathers property");
+}
+public static void main(String args[]){
+
+// objet creation
+Child obj= new Child();
+
+
+obj.right();
+
+//from super parent
+
+obj.old();
+}
+}
+	
+
+
+
+Hybrid unheritance:
+====================
+in hybride inheritance we use combination of any two inheritances
+
+one parent two childs with 
+(childs) acts as parents one child
+
+single+multilevel
+
+
+Polymorphism:
+=============
+poly = many
+                morphism= forms
+
+one work can do manyways
+one man can perform manyways
+
+we can achive polymorphism by two ways
+  a. method overloading
+  b.method overriding
+
+MethodOverloading:
+==================
+
+methode name is same but signature is differentiated
+                            number of params differentiated
+							order of params differentiated
+							type of params different
+
+eg:
+====
+
+class Claculator{
+
+public void add(int a,int b, int c)
+{
+
+System.out.println("addition of three int prams")
+}
+
+public void add(int a,int b,)
+{
+
+System.out.println("addition of two int prams")
+}
+
+public void add(int a,float b)
+{
+
+System.out.println("addition of  int,flot prams")
+}
+
+public void add(float a,int b)
+{
+
+System.out.println("addition of float, int prams")
+}
+
+public void add(float a,float b)
+{
+
+System.out.println("addition of two floats prams")
+}
+
+public static void main(String args[]){
+
+//object creation
+
+Calculator obj= new calculator();
+
+obj.add(12,15);  //two ints
+
+obj.add(41.4f,47);  //one int one float
+
+obj.add('s','b'); // here there is no char type even no compile time error why?
+              here it is used type promotion
+			  upcasting and downcasting we have
+			  higher size to low size==down casting
+			  * char take it int size.
+
+
+
+
+}
+}
+
+
+
+Method Overriding:
+==================
+method overriding means methodname is same but functionality is different
+  if parent has one property child wants to change the same methodname but implimentation is different.
+  
+  
+  
+  eg:
+  ====
+class Parent{
+
+public void property()
+{
+System.out.println("100 crore peroprty");
+}
+
+public void marrige()
+{
+System.out.println("arranged marrige");
+}
+}
+public classs Child  extends Parent             {
+
+public void marrige(){
+System.out.println("Love marrige");
+}
+public static void main(String args[]){
+
+
+// object creation
+Child obj= new Child();
+
+obj.property();
+
+
+obj.marrige();// child class implemntation
+
+}
+}
+  
+Abstraction:
+============
+
+simply hiding the data showing the functionality.
+
+for suppose in watsup you can type message and click the send button: 
+                           do you know what happend behind that button, but function of that button
+you, i.e hiding the data showing the functionality.
+
+
+what is class?
+ class collecction of datamembers and member functions.
+       class methods ara also called as "concrete methods/implemented methods"
+     eg:  
+	   public void display(){     //concrete/implemented method
+	        System.out.println("display method");
+	   }
+	   
+abstract class:
+                contains both concrete and non concrete methods/ abstract/un implemented methods
+				both implemented and un implemneted methods.
+		The combination of concrete and abstract method is called abstarct class.
+		* in class unimplemnted method that method make "abstarct " or provide implemntation.
+		* if you make your method abstarct then you have to make your class abstarct otherwise 
+		provide implemntation.
+abstract class Test{
+  
+  public void add(){  //concrete method
+     System.out.println("addition methood");
+  }
+  
+  abstarct void sub(); // abstarct method
+
+}
+public class Demo extends Test{
+
+public void print(){
+   System.out.println("printing method");
+}
+public static void main(String arags[]){
+// object creation
+Demo obj= new Demo();
+
+
+
+obj.add();
+obj.print();
+
+pbj.sub();
+
+public void sub(){
+   System.out.println("substracton method");
+}
+}
+}
+
+* in the abstarcation we will get 0 tp 100% abstarction.
+
+if we want to get 100% we should go for interface.
+
+
+interface:
+==========
+interface in java is a blue print of a class.
+
+we can use is a relation in interface
+
+only abstrac methods use in interface.
+
+used to get pure abstrction.
+
+by default interface meethods are abstract.
+
+we cannot create object for interface
+
+
+
+eg:
+
+interface Calculator{
+
+void add();
+
+public abstarct void sub();
+
+}
+public class Test implements Claculator{
+
+ void mul()
+ {
+ System.out.println("multiplication");
+ }
+public static void main(String args[]){
+
+Test obj= new Test();
+obj.mul();
+obj.add();
+obj.sub();//calling implemnted methods.
+
+
+//implemented methods
+public void add(){
+
+System.out.println("addition method");
+}
+public void sub(){
+
+System.out.println("substraction method");
+}
+
+}
+}
+
+
+Encapsulation:
+==============
+
+encapsulation is the concept of wrap of private data with corresponding methods.
+
+for suppose if we have employee data related to employee also, but data of employee should be private.
+functions of employee will get by using setters and getters methods.
+
+
+eg;
+
+class Employee{
+
+private int empid;
+priavte String empname;
+private int empsal;
+private String empAdd;
+
+
+//source
+//getters and setters method
+
+
+}
+
+// by using data as private others canot get any data or canot creat creat object and call it.
+//if you want use those by using getters and setters method we can use.
+
+
+Acess Modifiers:
+===================
+there four types of access modifiers
+
+default
+private
+protected
+public
+
+
+=>public can be access any where within the package ,outside package anywhere,
+=>protected we canot acess different packg non subclass, remaining anywhere we can acess.
+=>default can acces only package level scope only.
+=> private can be accesed only with in the class.
+
+
+pack1
+
+ public class Test{
+
+   void sleeping()
+    {
+	System.out.println("alrdy in sleeping");
+	}
+}
+
+
+
+
+
+pack2
+
+class Test1{
+
+  public static void main(string args[]){
+  
+   Test obj= new Test();
+  
+  }
+
+}
+
+
+packages:
+==========
+package is collection of classes and interfaces and sub packages.
+
+the purpose of package is without collision.
+
+two types of packages
+   pre defined package
+   user defined package
+   
+pre defined package:
+=====================
+sun micro sysytem is given many pre defined packages to simplify the programs, without writing anything
+we just import it we can get the functionality.
+
+purpose:
+   readebility increses
+   file serch time is less
+   
+
+java.lang.package is the defalut package.
+
+java.io
+
+java.util
+
+java.regex
+
+java.sql
+
+------------ lot of pre defined packages we have
+around 6000 prdefined packages we have.
+
+=>if i opened package in that we have system libery=open=> we have predefined pacakages: open=>
+ predefined classes we have. thats we have one structure ryt.
+ 
+user defined pacakges:
+======================
+if you want create your own oacakage you can.
+
+
+ suppose i write a class ? for that ineed to create package
+ 
+ package com.pk.examples.demo;  //it the structure of package where our class can be stored.
+ 
+ class Demo{
+   public static void main(String args[]){
+     Stystem.out.println("this user definedd package");
+   }
+ 
+ }
+ 
+
+open: cmd 
+          compile:    javac - d . Demo.java;
+		  
+		  execute: java package com.pk.examples.demo.Demo;
+		  
+		  
+		  
+This and super:
+==================
+this and super keys are used set some kind of properties.
+
+
+
+this; it is used to represent the current class properties(variable,constructor,method,object)
+super: it is used to represent the parent class properties(variables,methods, constructors)
+			  
+
+
+egl:
+====
+
+class Claculator{
+int a=18;
+
+  claculator(){
+   Sysout("i am defalut constructor");
+  }
+  claculatro(int i){
+   Sysour("param constructir");
+  
+  }
+  
+  void m1(){
+   Sysout("am param method")
+  }
+  
+
+}
+public class Test{
+
+  Test(){
+   super();
+   Sysout(this);
+   Sysout(super.a)
+  }
+  public static void main(String args[]){
+  
+  Test obj= new Test(); //object creation
+  
+  
+  
+  }
+}
+
+* when i create the object at that time child class defalut constucto will be calld.
+  in the constructor we have super() constriuctor 1 st i will called and print the which have in that 
+  
+  when i call super it will call from the parent class.
+  when i use this
+  
+  i write one more for this.
+   just tell me th o/p:
+   
+   
+   class Demo{
+   int salary=42000;
+   
+     public void rent(int salary){
+	 int salary= 32000;
+	  Syso(this.salary);
+	 }
+     public static ()[
+	 
+	 
+	 
+	 ]
+   }
+
+*if called salary wh value will print?  32000 ryt.
+if i want print 4200 wt shold i do..
+
+by using this key word i wil get the vslue from the class level
+
+
+
+
+Arrays:
+---------
+if you want store more than one value we are going to arrays.
+
+basically it is extension of variables
+  if i want print what i should do
+  String name="sathya"; // variable intialization
+  
+  if i want print more names is there any away or
+    if i place one more value in that it will sow error ryt
+
+class Arrays{
+
+  public static void am(){
+  
+  String name="sathya";
+  
+  String names[]={"","","",""} // array literal
+  
+  String name[]= new String[4];//array declarion
+  
+  name[0]="sathya"; //array intilization
+  name[0]="sathya";
+  name[0]="sathya";
+  name[0]="sathya";
+  name[4]="sathya";
+  
+  if i want to print that value it will give an exceprio: ArrayIndexoutOf Bound Exceprion
+  why meand length of array is 4 but you are giveng more values
+   the main limitations of array is size is fixed if you want change it will giveand one more thing
+   
+   you can save only perticular type data you can enter othe wise you will exceptions
+   
+   
+   
+   
+   for suppose i take employee class
+   
+   class Employee{
+   
+   //defalt constructor
+   //param constructor
+     private int empid;
+	 private String ename;
+	 private int empsal;
+	 private String eadd;
+	 
+	 
+	 //use getters and setting
+   
+   }
+
+  }
+}
+
+public class Test{
+main{
+
+Employee emp= new Employee(id name salary adds);
+Employee emp1= new Employee(id name salary adds);
+Employee emp2= new Employee(id name salary adds);
+Employee emp3= new Employee(id name salary adds);
+
+Employee employee[]={emp,emp1,emp2,emp3};
+
+Syout(employee);
+
+if you print taht
+what is the output?
+   employees can print hashcode.hexacode will be displaye
+   if your trying to pront object it calls the to stringmethod by defalut it will generate the hascode
+   to string is the method in object class. its not fifnal method
+   we have to over the method put required data and print the object it will retuern our requirment
+  
+  
+as far we discussed single dimension arrayswe have another doun;e or multidimension arrays
+
+int var[][]= new int[3][3];
+var[][]={{1,5,17},{47,45,1,},{47,36,4}}
+
+  for(int i=0;i<var.length;i++){
+      for(int j=0;j<var.length;j++)
+	    Sysout(var[i][j]);
+	  
+  }
+
+
+
+   
+
+
+Employee
+
+}
+}
+
+Exception handling:
+===================
+basically whever you logged in into gmail, fb or any one your facing error with forgot password
+the error message is called withexception handling.
+without exception handling we get system error mesage 
+as a end user he canit understand system error messages.
+
+when ever you ryting the some exceptions
+
+abnormal termination 
+system error messages
+
+
+
+exception is the concept of converting system error messages to user defined messages by using exception handling
+
+
+class Test{
+
+main(){
+
+scanner sc = new scanner(System.in);
+Syso("enter fistr number");
+int fnum=sc.nextIt();
+Syso("enter second number");
+int snum=sc.nextInt();
+
+
+
+}
+
+}
+abnormal termination
+system error messages
+
+
+compile time error: we willget bcz of poor in syntaxes: at the time of code writeing 
+run time error:at the time of execution we will get run time:the logic of code is noty
+
+
+1.error 
+2.checked exceptions
+3.unchecked exceptions
+                                     object
+
+                                 throwable (super class of all exceptions)
+
+1 synchronous exceptions             2 asynchronous exceptions
+                                       exception class
+									                                   RunTime Exception
+error                                checked                          unchecked exceptions
+java.lang.error                  file not found exception
+                                 boostrape
+								 classnotfound excepton
+								 illigal argument excpetion
+								 
+
+bootstrap
+rema error
+merory size
+related to the hardware
+weer
+
+compile time errors are those which are occuring ebcause poor understang of language
+run time errors ar occuring in the program user inputs invalid data.
+
+these run timeerrrors are converted by the programmer user friendly messeges by using exception handling
+
+
+by using 5 key keyword we will exception handling
+
+try catch finally throw thrwos
+
+
+by using these key words we can achive exception handling
+
+try{
+
+//error code
+// if is there any exception rise
+// is there any chance of exception rising in the code that code should be 
+placed inside the try block
+if any exceptions raised try block will see immaidate catch block
+
+}
+catch( exceptoion e)
+{
+exception handling code
+
+if we know which type of exeception
+ we ca wite type of exception if we dnt jno
+ w can use suoer css of runtime exception.
+}
+
+finally{
+// to close the connectuon
+
+}
+
+
+user defined exceptions:
+========================
+throw and throws
+
+throw is used to throw an exception
+we should write throw exception with in the method only
+
+
+throws is a keyword
+the purpose of throws is declared the exception there se chance of exception
+it isused with the singnatire.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JPA:
+===
+java persistence API
+
+in the jpa we can talk about jpa orm hibernate
+
+java persitence api it ia an interface or specification
+
+hibernate is a tool it is orm toolwhat is orm?
+object relational mapping
+
+is ther eany other tpes of orm tools availble yes.
+tipolink, ibatics hibernate
+but mostly we can use hibernate
+
+
+the what is need of japa and hibernate 
+what is the purpose
+
+as fas we discussd jdbc ryt
+what we did in jdbc
+
+we write the boiler palte code(taht means 5 lines every time)
+we write database details every time
+we should use exceptions
+it is time taken to change databse to database changes
+
+above these are all limitations of jdbc
+
+every single query we have to writw
+even we are create the table
+
+but we can not create tables in the hiberante automatically it will cretw just we provide the info about the 
+database
+here in hibernate
+direct java objects mapping with the datbase values
+objets converted into tables
+orm tool is used to connet the java application to relations mappings
+
+
+
+inth ehibernate we dont need to crete tables
+hibernate is the specification hibernate is the implematention
+we have to puse methos or specifications of jpa by implimenting hybernate we can do this things
+
+
+crete the java project
+employeemanagaemn
+simple corjava project 
+crete new java projet
+
+crete one package
+   Employee or Entity class we can say like encapsulated class we can say
+   test class we have mainmethod we cn write crud opertions and test with dtabase
+   w r to src we can crete new folder MET-INF
+    persistence.xml(xtensioble markuplanguage)
+	here we can write datsabse information
+	hibernate information
+	we want showing wich type of database we are using without
+	hibernate internally uses jdbc rytit s mandetory thing wite
+	dialect class  
+	show_sql by defalut it is false if we want to see we can use true
+	hdm2ddl auto...create updated
+	EntitymanagaerFactory factory= Persistence.createEntityMnagaeFactory("small")>persistence unit name
+
+ by using above line we can load the persistenc class.
+ EntutyMnagaer enty= factory.createEntutyManager();
+ entity.beginTransactions().begin();
+       Employee emp= new Employee(""," ,);
+
+entity.persist(emp); ->save /insert	   (these are dml operatuons we should commit)
+entity.beginTransaction.commit();
+entity.close();
+factory.close();
+
+==>HQL/JPQL querys
+-->relationships
+one to one
+one to many
+many to one
+many to many
+
+-->is a relationships
+cache concpet
+
+
+
+
+
+date and time Api:
+=====================
+until java 8 came the java date adntime availble in java,util pacakges
+some restrictions they are introduced in the java 8 as named as joda API from joda.org
+
+in this it provides
+date , time, we an find out bothe time and date at a time,zoned data, leap years and so...
+
+present in java.time.package.
+
+
+//if you want localdate or today date we have two calsses
+
+localdate
+lacaltime
+
+above thse are classes
+
+
+LocalDate date= LocalDate.now();
+System.out.println(date);
+
+LocalTime time= LocalTime.now();
+
+System.out.println(time);
+
+// i want bothe date and time 
+
+
+LocalDateTime dt= LocalDateTime.now();
+System.out.println(dt);
+
+// if i want findout perticular datand time ca ni yes you can.
+
+
+LocalDateTime dt1= LocalDateTime.of(1994)
+
+
+
+
+
+i/o streams:
+================
+input and output streams
+ basically if we want store employe info or any other information we are saving text files ryt
+ 
+ at the same way if we want store data by using java can we yes we can store data by using 
+ 
+files
+
+
+input and output streams.
+
+present in java.io.package
+
+we have major classes
+
+file, filewriter.bufferedwritter, printwriter
+to read the file
+  filereader, buffered reader.
+  
+  first you need to create file 
+  
+  for that 
+  
+  File f= new File();  //file object creation
+  //import the package java.io
+  within the constructor which file you want to cretae 
+  name tahta file and save in the constructor
+  
+  File f= new File("welcome.txt");
+  /refresh the page
+ //with only not creted the file
+f.createNewFile(); // instance method of file writer
+
+file see in the package
+
+
+if you have wrute the file use
+
+three classes
+
+
+filewritter. buffereWritter, PrintWriter
+
+ by using therse three classes we can wite the data into the file
+ 
+ FileWriter fw= new FileWriter(); //privode filename otherwise it will create
+ FileWriter fw= new FileWritwr("welcome.txt");
+ 
+  fw.write("hello");// write inthe file
+  fw.write("hello");
+  fw.close();
+  Syso("data writern");
+  
+  check on the file data written
+   but instred of 97 it will print the charecter 
+   why problem of filewitr
+   
+   package com.iostreams;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Test {
+	public static void main(String[] args) throws IOException {
+			
+		FileWriter fw1= new FileWriter("welcome.txt");
+		PrintWriter fw= new PrintWriter(fw1);
+		
+		fw.println("hello");
+		fw.println("hello");
+		fw.println('d');
+		fw.println(true);
+		fw.println(97);
+		fw.close();
+	//	System.out.println(fw);
+		
+		System.out.println("data written");
+	}
+
+}
+if data written in to the file
+
+// if you want read the data from the file
+
+we have two classes
+ filereader and bufferedreader
+ 
+ 
+ package com.iostreams;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Test {
+	public static void main(String[] args) throws IOException {
+			
+		FileReader fw= new FileReader("welcome.txt");
+		
+		while(fw.read()!=-1) {
+			char c= (char) fw.read();
+			System.out.println(c);
+		}
+		
+	// it will read the letter byletter
+		
+	// if we have 1000 lones it will take 1 day to cimplte for that we need to for buffered reader
+		
+		
+		
+	}
+
+}
+
+Buffered reader:
+===========
+package com.iostreams;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Test {
+	public static void main(String[] args) throws IOException {
+			FileReader fw= new FileReader("welcome.txt");
+		BufferedReader br= new BufferedReader(fw);
+		String data=br.readLine();
+		while(data!=null) {
+			
+			System.out.println(data);
+			data=br.readLine();
+		}
+		
+	// it will read the letter byletter
+		
+	// if we have 1000 lones it will take 1 day to cimplte for that we need to for buffered reader
+		
+		
+		
+	}
+
+}
+
+
+JDBC:
+=======
+jdbc is api it used to connect the java application to database.
+
+
+jdbc is an api given by the sunmicrosystem
+in the market wew have lot of datsabse oracle mysql db2 sysbay
+
+
+we can use any database to write h querys
+as end user we can interact with the java application and java application interact with the databse 
+with the help of jdbc(java database connectivity)
+
+we have 5 strps to connect with dstabase sand execute the query
+as per our content we have go with thepostgres
+
+internally jdbc useing drivers to connect the database
+w hav 4 driver classes
+jdbc-odbc driver
+network protocal driver
+native api driver
+thin driver(java driver pure java driver)
+cretate the project
+loa dthe dependecis postgres
+5steps:
+======
+1.load the driver class
+   Class.forName(org.postgres.Driver);
+2.create the connection
+Connecction conn=DriverManagaer.getConnection("jdbc:postgresql://localhost/sonu",postgres,sathya@123);
+
+3.create statmnt
+                  Statemnt stmt= conn.createStatement();
+4.execute the query
+ddl=>execute  drl=>executequery  dml=>executeUpdate
+                     boolean result     =stmt.execute("create table");
+					 
+5.close the connection
+Syso(result+"table created");
+conn.close();
+
+
+Arrays:
+=======
+before going to arrayas
+
+
+public static void main(String [args]){
+
+
+
+}
+why we take only string?
+
+In the string we can store any datatypes
+can we take int instead of aastring? yes you can but you can store only integer values.
+
+okay in the string we can store any value but what ithe array
+
+string name="ramu"; // this way i cn store only one value,
+if i want store number values we cna use arrays
+in arrays we can store any number of values
+
+String names[]={"",""};  // this is syntax of array // thsi is literral way
+
+int ages[]= new int[3]; //here mandetory to give the size of the array
+int ages[];//array declaration
+ages[0]=34;//initialization
+array can be started from index based
+start from zero
+class Test{
+psvm(){
+
+SString names[]={"akash","ramu"};
+
+int ages[]=new int[2];
+ages[0]=34;
+ages[1]=32;
+
+Syso(ages[1]);
+
+}
+
+}
+
+print the age of 1 index number.
+like this we can print the values.
+
+if we want to print employee inforamtion by using arrays
+
+Employee employees[]=new Employee[4];
+
+Employee emp= new Employee(100,"dsaa"45770,"hyd");//param constructor
+Employee emp1= new Employee(100,"dsaa"45770,"hyd");
+Employee emp2= new Employee(100,"dsaa"45770,"hyd");
+Employee emp3= new Employee(100,"dsaa"45770,"hyd");
+
+i want to print employee info what we do now
+
+for(Employee employee:employees){
+Syso(employee);
+}
+
+//now it will print the object address that is hascode
+//why it will prijt the hashcode
+//bcz of objecyt internally calling the tostring method
+//it will generate the hashcode/
+//if i want print the employee info
+//we have to override the tostring method 
+//we can change the implmntation
+//and print the empoyye information.
+
+
+we have multidimension arrays
+
+
+int age[][]= new int[3][3];
+
+ccollections:
+=============
+collections are growable in nature
+collections we can add objects
+
+colletion is the root interface of collection interface avaailbale in java.util package.
+it allows only objects
+collections is grouping of similer and dissimiler objeccts make single unit.
+
+cwe cant create collection object directly and also we cant crete direct implenttion 
+
+collections three child interfaces
+
+list set queue
+
+interface list extends collection
+
+  wec anit crete the objet list interface.
+  
+  why list:
+  =========list can allow both similer ad dissimilero bjects
+  here insertion order is preserved.
+  only one null values acan be allowed
+  
+  list we have 4 implemntation classes
+  
+  list l= new Arraylist();
+  
+  
+  arraylist
+  linkedd list
+  stack
+  vector
+  
+  stock and vecto are legassy classes
+  arraylist al= new Arraylist();
+  LinkedList li= new LinkedList();
+  stock s= new stock();
+  vector v= new vecctor();
+  al.add("sathya");
+  al.add(43);
+  al.add(true);
+  al.add("sathya");
+  al.add(null);
+  
+  Syso(al);
+  for(object o:al)
+  {
+  Syso(o);
+  }
+
+
+if our freaquent operation is inserrtion updation deletion then we go for linke list
+internally linked list follews doubly linked list.
+
+if our frequent operation is accecsing the objeccts then we go for arraylist
+  arraylist is used for random access.
+  
+  stock and vector are legassy classes:
+  
+  in the list we have seperate methods and these methods not apllicabe foe set 
+set:
+=====
+it allowes bth similer and dissimiler objects
+it will not allowed duplictaes
+insertion order is not preserved.
+only one nul value can be inserted.
+
+hashset
+ it will not allowed duplicates
+ insertion order is not preserved.
+HashSet hs= new HashSet();
+
+hs.add("bsv");
+linkedhashset
+
+sortedset interfce
+  tree set
+
+
+what is diff?
+  hashset insertion order is not preserved
+  linke hasset
+   insertion order is presrved
+ treeset:
+ =========
+ only similer type of data can be allowed
+ duplicates not allowed
+ we can predect the data
+ TreeSet ts= new TreeSet();
+ 
+ ts.add();
+
+queue:
+======
+quue is used to fifo order
+ priorityqueue
+ diquue prioerity queue.
+ these are data enter in fidt in fistout.
+ 
+ 
+autoboxing: primitive vaues can be converted into objects ==autoboxing
+objects can be converted into primitive valyes=== autounboxing.
+
+
+Integer i= integer o:  // here object can converted into primitive values downcasting.
+
+
+generics:
+==========
+generics in collecctions are used before but its type casting procees
+ then there is problem if we wanchnging evry datatype to casting ist difficulty thers thats why
+ generics concepts introduced.
+ 
+ only perticuler kind of data can be allowed for that we need to mention the type of datatype
+ 
+ 
+ cursors in java:
+ ===============
+ wrto collectons if we want to iterate the elements by using collections objects
+ there are three types of cursors
+ 
+ Enumeration: only legacy clases we can  used(stock and vector)
+ iterator: any collection classss can be used also called universol iterator/unidirectional iterator
+ lisriterator:list iterator can be used only for list classes aslo called as bu directional iteraror.
+ 
+ 
+ al.add("sathya");
+ al.add("ramu");
+ al.add("sai");
+ al.add("janu");
+ 
+ 
+ Itrator itr=al.iterator();
+ 
+ while(itr.hashnext())
+ {
+ Syso(itr.next())
+ }
+ 
+
+
+
+spring:
+=======
+spring is non invasive framwork will create  light weight loosly coupled apllications.
+
+by using framework we can make web applications with in less time
+
+loosly coupled/tightly coupled
+lightweight/heavy weight applications
+non invasive/invasive 
+
+heavy weight:
+===========
+
+if ineed to cretae we applications
+
+class Employee extends Httpservalet{
+//11 methods
+if ineed to crete we need to extends abstract methods with out these dependcis we dont crete any application
+here if i want 10 chiks classs we need to extend more  for childs
+it will incerse the apllication sie
+thts why it is heavy weigth
+for that in spring we no need to extends or impliments any predefined apis
+that why spring is loosly coupled.
+
+
+if i ceretae clas from anotherc las i wqnt dreate object for that class my class hihly dependent ob that class
+
+here hihky dpendt on thet class called tightly called.
+
+invasive non invasive.
+
+
+invasive:
+which frame works need predifened api with these web application not created
+
+struts,
+
+non invasive:
+hibernate,sping arae non invadive frameworks.
+
+
+spring has 20 modules:
+
+1.spring core module/ioc(inversion of control)/dependecy injection
+
+1.spring jgbc
+spring mvc
+spring security
+
+1st we learn spring core odule:
+
+here we no need to creye objectspring spring container will crete the object for 
+there two ways
+
+BEANS CONTAINER
+
+APPLICATION CONTEX
+
+
+beans container lazy we can say or basic apllications we use beans
+
+applicationContex used for hugh annituon based and advanced applications it is eagar.
+
+we have beanfactory
+
+//resiurce and beanfactory are interfaces
+
+Resource resource=creteBeanconficgurtio("configuratuon.xml");
+BeanFactory factory= new XmlBeanFactory(resiurse);//looking for resource
+ Employee emp=(Employee)factory.getBean("sleeping");//casting object get bean rturn object
+ 
+ Syso(emp);
+ 
+ configuration file
+ // we need to provide the class info in xml xml is the universal languge 
+ 
+ 
+ <beans> beans tag is the root tag</beans>
+   // we give info about class for than
+   <bean> child tag</bean>
+   //if we want provide value we use property tag
+   <property class="eid" value="123"> </property>
+this is normal way
+if we have more setter injections and objects we have ti write more lines 
+based on tha we have one concept without using ref attribute
+
+autowire concept:
+  in the autowire we have 
+    byTpe
+	byName
+	constructor-arg
+by using these three injectors in autowire
+autowire="byType" it will check only id
+autowire=bynme> it will cjeck the property name same as like id name
+constructor arg only we have one.
+
+
+by using appicationcontext we can use annotationsxmlcontext
+
+if we want to use complete annotationsxmlcontext
+
+apllicationContex factory= new Annotaionapplicationcontext(appconfig.class);
+
+here we dont use any xml file
+instead of bean tag we are goung to use @bean annotion
+
+create appconfig.class file
+
+use annotaion @configure 
+this calss has configuration properties
+@Bean
+public Employee getEmployee(){
+emp.setEnmae("ddc");
+  return emp;
+}
+  
+it is just noramla java class file java pnormal methods 
+
+we can use anothers annotions and then we have to remove appconfig file alos
+
+remove that file add one annotion @ component java file employee and address which have object
+
+but confiuration fil serching for object ryt we need to create path we have to giev package name wheremeans
+
+use @componentscan(packagename);
+it will search for object and give the execution.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

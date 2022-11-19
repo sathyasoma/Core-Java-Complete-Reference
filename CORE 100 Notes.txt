@@ -1,0 +1,5344 @@
+
+core java:
+==========
+
+lanaguage:
+----------
+
+to communicate with person
+  General languages:
+  ------------------
+  engilsh,hindi,telugu,tamil
+  
+ programming language:
+ ===================
+ to machine--->binary lanaguage--->o's 1's
+ 
+ ATM APPLICATIONS
+ CALCLULATOR APPLICATIONS
+ bILLING MACHINE APPLICATIONS
+ 
+ two types applications:
+ 
+ 1.standalone applications/desktop : antvirus, vlc media,acrobatic
+ 2.distributed application/network applications: facebook, instargram,watsup
+ 
+ 
+ pop                                                 oop
+ procedure oriented languages                object oriented programming
+ 
+ b,bcpl,c, cobolt                               c++,java,python,.Net
+ 
+ 
+ 
+ 1.security and performance
+ 
+ oopl                                                      oop(features)
+ 
+ object oriented programming language                    object oriented programming
+ 
+ oop------->canadian org(omg)
+ 
+ 1.inheritance
+ 2.polymorphism--------->performance
+ 3.abstraction
+ 4.encapsulation----------->security
+ 
+ 
+java:
+----
+
+java is object oriented programming language for the purpose of developing both standalone and distributed 
+applications.
+ 
+ father:james gosling 1995--->sun micro system
+ 
+ current version:jse 17
+ standard version: java se8
+ 
+ oracle corp: www.oracle.com
+ 
+ 3 editions:
+ 
+ jse: java standard edition:core java:
+ jee:java enterprise edition: advance java:
+ jme:java micro edition: mobile application
+ 
+ 
+ 
+1.platform independent
+2.garbage collection
+ 
+prerequisites to write java program:
+----------------------------------
+c program-----> c software-->turboC
+
+java---->java software---> jdk(java development kit)8
+
+www.oracle.com---->jdk8
+
+ 1.download software--
+ 2.install
+ 3.we need editors: notepad, notepad++, eclipse,netbaens, intelij
+ 4.write java program
+ 5.save the file
+ 6.compile the java program
+ 7.execute program
+ 
+ java--> 53 key words--->goto, constant
+ 
+ structure of java program:
+ ------------------------------
+ 
+ 
+ class Student
+ {
+ 
+ public static void main(String args[])
+ {
+ 
+ System.out.println("welcome to java");
+ }
+ }
+ 
+ 
+ 1. .java
+ 2. .class
+ 3, compilation
+ 4. execution
+ 5, jvm
+ 
+ 
+ 
+ .java
+ 
+ .class
+ 
+ compilation:
+ 
+                  compiler
+ .java------------------------------->.class
+ 
+ 
+ compilation: javac filename.java      javac Student
+ 
+ execution: java className
+ 
+ 
+ 
+ 
+ 1,platform independent: (WORA)--WRITE ONCE RUN ANYWHERE
+ ======================
+              PI
+ windows-------------------------------linux
+ .java
+ .class------------------------------->.class
+ 
+ .NET--->PLATFORM DEPENDENT
+ 
+ JAVA ORACLE                       .NET   MICROSOFT
+ 
+ 
+ .NET
+ 
+                    PD
+ WINDOWS-------------------------------------LINUX
+ 
+ .CLASS---------------------------->
+ 
+ 
+ 
+ 2.GARBAGE COLLECTION:---->performance
+ -------------------
+ 
+ int age= 23;       //4byts
+ 
+ 
+ 1000 variables----------->1000*4=4000bytes
+ 
+ 1 variable----->waste
+ 
+ garbage collector---> it will collect the unwanted memory space
+ 
+ 
+ c++:   we need to write prgrom
+ 
+ 
+ // single comments
+ 
+ /*      multiline comments*/
+ 
+ 
+now we are move to next concept variables?
+******************************************************************************************
+day 2:
+=======
+variables:
+           name of storage location
+		     variabke is acntainer to store the values
+	ex: someone called you discussed something and again if you want call him you need number ryt?
+	         if you want call him you need to store that number otherwise you cant call him. forthat what we need
+			 to do we need to store that number in your memory or phn contact by using his name,
+			   that number is stored in the name ryt?
+			   
+syntax:
+        datatypename variablename= data/value;
+		ex: int age=23;  //valid
+		
+	what is datatype?
+
+it is representing the type of data which we strored in the variable.
+
+itis mandetory to specify which datatype is using while we are storing the value into varible.
+
+otherwise compiler give error
+
+ex:  name="alexa";  //invalid
+     number=2;
+	 name='a'; //invalid
+	 
+	 String name="alexa";
+	 int number=2;
+	 
+how many dataypes we have?
+
+two types
+1.primitive dattaypes/pre defined/system defiend
+2.non-primitive datatypes/refrenced dattypes
+
+
+primitive datatypes:
+-------------------
+categorized into 4
+
+integer category:to store numeric vlues
+  -byte
+    ->short
+	  ->int
+	    ->long
+float category: to store decimal values
+   ->float
+     ->double
+
+charecter category: to store single charecter
+
+char
+boolean category: to store logivalues true or false
+
+boolean
+	 
+	 
+we have 8 datattypes besed on 4 categories
+
+-byte:range: -128 to 127 size: 1 byte=8 bits
+  to calculate the range of datatype we have one formula:  - 2^n-1 to (2^n-1)-1
+short: 2bytes
+int:4bytes
+long:8bytes
+float:4bytes it can store 4 to 5 decimal points,
+double: 8bytes 14 to 15 decimals we can store
+char: 2 bytes
+old langugaes c cPP are basded on ascii code they can support only 256 charecters but java support 18 international langues
+ 6553 chrected are allowed, befor char size is 1byte but these many charecter wew cannot store in 8 bits
+ thts chnged to 18 bits
+boolean:true=1, false=0
+but virtual machine cant store the values
+
+identifiers:
+-----------
+a name in java is called identifiers
+class name, variabe name, method name identifiers
+
+
+class MyClass{
+  public static void main(String args[]){
+  
+     int a=12;
+  }
+}
+	 
+above we have names
+
+any key word in java has lowercase only
+java is casesensitive
+class name should be starts with capital letter remaing small
+variable name starts with lowercase camelcase
+rules for identifiers:
+
+the only allowe d charecter in java identifiers
+
+a to z
+A to Z
+0 to 9
+  $
+  _
+  
+ if we are using any other charecter compiler give error
+  total_number(valid)
+  tatal*// invalid
+  
+identifier should not with any digits
+
+ 123total .. invlid
+ total123 valid alphanumeric is vlaid
+
+comments in java
+single line comments //
+multiline comments /* */
+ 
+did you get it what is dt how many dtys
+
+varibales:
+
+are two types:
+
+local variables: local variables are defiend with inthe method
+global variables: global variables are defined with in the class out side the method
+
+again global variables are divided into two types
+        static variable, instance variable
+		 
+class Test{   //class 
+ 
+ // global variables
+    public static void main(String args[]){  //method 
+	
+	// local variables
+	
+	}
+}
+ 
+
+variable properties(variables and methods):
+    
+	basiclly we have 4 diffrent properties
+	
+	
+	syntax:with static keyword we can say static properties,without static is called instance.
+	
+	memory: static properties will get memory space at the time of class loading into jvm
+	         instance properties will get memory space at the time of object creation
+	
+	how to access: static properties will acces by using class name
+	               instance properties will acces by using objecct refrence
+	
+	when to access:
+                    whenever common properties required we use static keyword
+					whever unique properties required we use instance properties.
+		
+    till now we used to write program in notepad, notepad++
+                it time taking process to write program
+                   in IDE is autocompiled, we no need to compiler
+                      it will suugest to process next steps
+                        in development everyone use eclipse to create in less time.					  
+	install IDE(integrated development environment)
+	   --type eclipse download for jdk 8
+	   --download old version
+	   --install the eclipse
+	   --set the open perspective(java)
+	   --create the java project
+	   -- package
+	     
+		 ********************************************************************************************
+day 3:
+======		
+	methods:
+	--------
+	method is the location where we can write the logic to perform action.
+	
+	syntax:  acessmodifier returntype methodname(if parmaters any)  //method head
+	            {
+				  //method body
+				}
+
+
+            void is a keyword it wont return anything
+			   every method return something, if you dont want return anything just take it as "void"
+			   
+      public void getName(){ // instance method without return anything
+	     System.out.println("my name is ----");
+	  }
+
+    * method return addition of two numbers
+	
+	     int sumOfTwo(int x, int y){ // instance method with return type with parameters
+		     return x+y;
+		 }
+		 
+	*static method return sub of two
+	    
+		  static int subOfTwo(int a, int b){
+		     return a-b;
+		  }
+    *stati method without return type
+	  
+	      static void mul(int a, int b)
+		  {
+		      System.out.println("mul od two numbers"+(a*b);
+			  
+		  }
+
+example:
+===========
+
+class Test{ // main class
+
+  int x= 23; //instance variable
+  static int y= 45; // static variable
+  
+  // return nothing print sum of two values
+  
+  void sumOfTwo(int a, int b){
+         
+		 System.out.println("addition of two numbers"+(a+b);
+		 
+  } 
+  static void subOfTwo(int a, int b){
+       System.out.println("sub  of two numbers"+(a-b);
+  }
+  
+  int mul(int a, int b){
+   return a*b ;
+   
+  }
+public static voiad main(String args[]){
+
+int  a=43;
+int b= 34; //local variables
+System.out.println(a+b);
+
+//object creation
+classname object refrence= new classname();
+Test obj= new Test();
+obj.sumOfTwo(); //instance method
+obj.mul(1,56);
+int result= obj.mul(1,56); //instance method calling
+
+System.out.println(result);
+
+Test.subOfTwo();  
+}
+
+}
+****************
+constructor
+****************
+
+
+constructor?
+===========
+
+method syntax:  accesmodifier returntype methodname()
+                     {    }
+
+constructor syntax:  className();
+
+*if anything followed by(), we can call is method, but
+*constructor is a special member method		
+* constructor name is same as like "ClassName"	with braces
+* constructor should not return anything even " void " also
+
+
+*purpose:
+=========
+
+the purpose of constructor is: to intialize the objects	 
+
+     ==>it is higly recomended to keep intialization logic inside the constructor
+	        not in normal method because avoid explicitly calling.
+
+
+
+      int a;  //variable declaration
+	   a=23;  //assigning value
+	   
+	   int a=23;  //declaration+initilization
+	   
+without constructor::
+=====================
+
+class Student{
+
+ //decclaring variables
+ 
+ int stid;
+ String stName;
+ 
+ //to assign the values i want use method
+ 
+ void assign(){
+    stid=100;
+	stName="";
+ }
+ 
+ //to display the values i used one method
+ 
+ void display(){
+     
+	 System.out.println(stid+"  "+stName);
+ }
+ 
+ public static void main(String args[]){
+ 
+             //object creation
+			 Student obj= new Student();
+			 
+			 obj.assign();
+			 
+			 obj.display();//if i call display method we will get default values.
+			 
+	/*why we get default values, because if in our class if we dont have any constructor , compiler will
+	
+	   create defalut constructor, generate defa;u values for stid, stName,
+	*/
+			 //what we want to do to print our values,
+			 //calling display method before we need to call assign method then only we will get th vlaues
+			 //when we are calling assign method then values are assigned and diaply mthod print those values.
+ }
+
+}
+	  
+	with constructor:
+=====================
+
+class Student{
+
+   int stid;
+   String stName;
+   
+   Student(){
+      stid=100;
+	  stName="divya";
+   }
+   
+   void display(){
+     Sop(stid+"  "+stName);
+   }
+   
+   public static void main(String args[]){
+   
+   //object creation
+   Stident obj= new Student();
+   
+   obj.display();
+   
+   //when i call the display method automatically values will be printedd.
+   //how?=>at the time of object creation only values intilized
+   
+   
+   }
+
+}	
+	 
+	 
+	 types of constructors:
+	 ----------------------
+	 we have two types of constructors
+	 
+	 1.no- arg constructor
+	 2.parameterized constructor
+	 
+	 in no-arg constructor we have two types
+	            *default constructor/system define constructor
+				*user defined constructor
+	 
+	 
+	 
+	 *when we did not define any constructor in a class system(compiler) will define one default constructor
+	 *we can define our constructor with our own values we can call user defined constructor.
+	 
+parameterized constructor:
+=========================
+when we pass parameters to the constructor we can say param constructor
+
+eg:
+
+class Test{
+
+ Test(int x)
+{
+
+Sop("i am param constructor");
+}
+
+public static void main(String args[]){
+
+   Test obj= new Test(100);
+
+
+}
+}
+	 
+	 
+can we define both default and param constructor in one class?  YES
+
+
+eg:
+---
+
+class Test{
+
+   Test(){
+   
+   Sop("i am default constructor");
+   }
+   
+   Test(int x,String y){
+     Sop("i am param constructor");
+   }
+
+public static void main(String args[]){
+
+Test obj= new Test();  // called defalut constructor
+
+Test obj= new Test(100, "divya");
+
+
+}
+
+}	 
+	 
+	 **we can define only one default constructor in one class but we can define number 
+	 of param constructors in class.
+	 
+	 
+	 
+	 
+	 
+
+
+***********
+Flow controls
+*****************
+ control statements in java:
+ ``````
+ we can control the flow of execution.
+ 
+ 
+ using these control statements, which part of the code
+ will be executed, when it will be executed , how many no.of 
+ times we can make it execute
+ 
+ 
+ java provides three types of control statements
+ 
+   1.decision making statements
+   2.loop statements
+   3.jump statements
+   
+   
+ 1.decision making statements:
+ ``````
+ 
+ decision making statements evaluate the boolean expression
+ and contrl the program flow depending upon the condition
+ result.
+ 
+   there are two types of decision making staements in java.
+   
+             1.if statement
+			 2.switch statement
+			 
+if statement
+`
+in java , if statement is used to evaluate a condition.
+
+the control of the program is diverted depending upon the
+condition result that is a boolean value, either true or false.
+
+
+in java, there are four types of if-staements 
+
+  
+          1.if statement
+		  2.if else statement
+		  3.else-if statement
+		  4.nested if statement
+		  
+		  
+1.if statement:
+````
+it evaluates a boolean expression and enables the program 
+to enter a block of code if the expresson evaluates to true.
+
+syntax:
+`
+   if(<condition>)
+   {
+     //block of code 
+   }
+   
+example:
+```
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+	  int x=100;
+	  int y=200;
+	  
+	  if(x+y>200)
+	  {
+		  System.out.println("x+y is greater than 200");
+	  }
+	}
+
+}
+
+
+if-else statement:
+````
+if-else satement is an extension to the if-statement
+which uses another block of code. i.e else block.
+
+
+The else block is executed if the condition of the if-block
+is evaluated as false.
+
+
+syntax:
+``
+syntax:
+`
+   if(<condition>)
+   {
+     //block of code 
+   }
+   else(<condition>)
+   {
+     //block of code
+   }
+   
+
+example:
+```
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		
+	  int x=100;
+	  int y=200;
+	  
+	  if(x+y<200)
+	  {
+		  System.out.println("x+y is less than 200");
+	  }
+	  
+	  else
+	  {
+		  
+		  System.out.println("x+y is greater than 200");
+	  }
+	  
+	}
+
+}
+
+// one if statement
+
+
+3.else-if statement:
+`````
+1 -if statemnt
+multiple -else-if statements
+1-else statement
+
+example:
+`
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		String city="Delhi";
+		
+		if(city=="Meerut")
+		{
+			System.out.println("city is meerut");
+		}
+		
+		else if(city=="Noida")
+		{
+			System.out.println("city is noida");
+		}
+		
+		else if(city=="Agra")
+		{
+			System.out.println("city is agra");
+		}
+		
+		else
+		{
+			System.out.println(city);
+		}
+			
+		
+		
+	}
+
+}
+
+
+assignment:
+``
+check whether number is positive,negative or zero by
+using if-else-if?
+
+
+-----------------------------
+public class test1 {
+
+ public static void main(String[] args) {
+     
+  int a=100;
+ if(a>0)
+  
+ {
+  
+  System.out.println("number is postive");
+ }
+ 
+ else if(a<0)
+ {
+    
+   System.out.println("number is -ve");
+  }  
+  
+  else{
+  
+  System.out.println("number is zero");
+  }
+ }}
+
+
+nested-if statement:
+````
+it is always legal to nest if-else staements which means
+we can use one of or else if statements inside another if
+or else if statements.
+
+syntax:
+   if(booleanexpression1)
+   {
+     //executes when the boolean expression1 is true
+	 if(booleanexpression2)
+	 {
+	  //executes when the boolean expression2 is true
+	  }
+   }
+   
+example:
+```
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		int x=30;
+		int y=10;
+		
+		if(x==30)
+		{
+			
+			if(y==10)
+			{
+				System.out.println("x=30 and y=10");
+			}
+		}
+	}
+
+}
+
+
+
+
+
+ Loops in java(loop statements):
+ ````
+ In programming languages, loops are used to execute
+ a set of instructions repeatedly when some conditions
+ become true.
+ 
+ 
+ there are 3 types of loops in java.
+ 
+   1.for loop
+   2.while loop
+   3.do-while loop
+
+
+for loop:
+```
+it is used to iterate a part of the program several times.
+
+if the number of iteration is fixed, it is recommended
+to use for loop.
+
+syntax:
+``
+for(intialization;conditionchecking;incremnt/decrement)
+{
+ //code to be executed
+}
+
+eg:
+
+
+
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		//for loop
+		for(int i=1;i<=10;i++)
+		{
+		System.out.println(i);
+		}
+		
+	}
+
+}
+
+
+write a program to display 100 to 200 numbers using
+for loop?
+
+
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		//for loop
+
+		for(int i=100; i<=200;i++)
+		{
+
+		     System.out.println(i);
+
+		}
+		
+		
+		
+	}
+
+}
+
+
+write a java program for displaying first 10 numbers
+in reverse order using for loop?
+
+ex:
+
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		//for loop
+
+		  for(int i=10; i>=1;i--)
+		  {
+
+		  System.out.println(i);
+
+		  }
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+write a java program for displaying  even numbers
+using for loop?
+
+expected output:
+````
+2
+4
+6
+8
+10
+
+program:
+```
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		//for loop
+
+		for(int i=2; i<=10;i=i+2)
+		{
+
+		System.out.println(i);
+
+		}
+
+		
+		
+		
+	}
+
+}
+
+assignment:
+``````
+write a java program for displaying  odd numbers
+using for loop?
+
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		//for loop
+
+		for(int i=1; i<=10;i=i+2)
+		{
+
+		System.out.println(i);
+
+		}
+	
+		
+	}
+
+}
+
+
+
+while loop:
+``
+it is used to iterate a part of the program several times.
+
+if the number of iteration is not fixed, it is recommended
+to use while loop.
+
+
+syntax:
+``
+              while(condition)
+			  {
+			  //code to be executed.
+			  }
+ 
+write a java program for displaying 1 to 10 numbers using
+while loop?
+
+example:
+``````
+
+public class Test8 {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		int i=1;
+		while(i<=10)
+		{
+
+		System.out.println(i);
+		i++;
+
+		}
+		
+		
+	}
+
+}
+
+
+write a java program for displaying 1000 to 500 in reverse order?
+
+
+public class Test8 {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		int i=1000;
+
+
+		while(i>=500)
+		{
+
+		System.out.println(i);
+		i--;
+
+		
+		}
+		
+		
+	}
+
+}
+->write a java program for displaying even numbers
+  using while loop?
+  
+  2
+  4
+  6
+  8
+  10
+  
+ example:
+``
+
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		int i=0;
+
+		while(i<=10)
+
+		{
+			
+		System.out.println(i);
+		i=i+2;
+
+		}
+	}
+
+}
+
+->write a java program to define infinite while loop?
+
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		while(true)
+		{
+			System.out.println("infinite while loop");
+		}
+	}
+
+}
+
+
+example:
+```
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		 int i=100;
+		while(i>1)
+		{
+			System.out.println("infinite while loop");
+			i++;
+		}
+	}
+
+}
+
+
+assignment:
+``
+write a java program for achieving infinite loop using
+for loop?
+
+do-while loop:
+````
+it is used to iterate a part of the program several times.
+
+
+if the number of iteration is not fixed and you must
+have to execute the loop at least once, it is recommended
+to use do-while loop.
+
+icici --> at last it asks for pin number(do-while)
+
+sbi --> initially it asks for pin number(while)
+
+java do-while loop is execute at least once because 
+condition is checked after loop body.
+
+
+syntax:
+``
+             do{
+			 
+			    //code to be executed
+			 }
+			 while(condition);
+
+
+write a java program for displaying 1 to 10 numbers
+using do-while loop?
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		// do-while loop
+		int i = 1;
+		do {
+			System.out.println(i);
+			i++;
+
+		} while (i<=10);
+	}
+
+}
+
+
+->
+write a java program for displaying 20 to 10 numbers
+in reverse order using do-while loop?
+
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		int i=20;
+
+		do{
+		 System.out.println(i);
+		  i--;
+		 }
+		 while (i>=10);
+	}
+
+}
+
+
+->write a java program for infinite loop using do-while?            
+
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		
+		do
+		{
+		 System.out.println("Infinite do while loop");
+		 }
+		 while (true);
+		}
+	}
+
+
+
+
+
+jump statements:
+````
+when a break statement is encounted inside a loop, the loop is 
+immediatly terminated and the program control resumes at the next 
+statement following the loop.
+
+  the java break statement is used to break loop or switch staement.
+  
+  it breaks the current flow of the program at specified condition 
+  
+  for loop
+  while loop
+  do-while loop
+
+
+break statement in for loop:
+````
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				
+				break;
+			}
+			System.out.println(i);
+			
+		}
+	}
+}
+
+
+
+
+assignment:
+``
+use break statement in both while loop and as well
+as do-while loop?
+
+
+
+continue statement:
+``
+continue statement is used in loop control structure
+when you need to jump to the next iteration of the loop
+immediatly.
+
+it can be used with for loop or while loop or do-while.
+
+it is used to continue the loop, it continues the current
+flow of the program and skips the remaining code at
+the specified condition.
+
+
+syntax:
+
+   jump-statement;
+   continue;
+   
+   
+example:
+```
+
+//defninig infinite while loop
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				
+				continue;
+			}
+			System.out.println(i);
+			
+		}
+	}
+}
+
+
+assignment:
+``
+write a java program for apply the continue statement
+in both while and do-while loop(s)?
+
+
+************
+command line arguments:
+************************
+command line arguments:
+````
+
+class Test1
+{
+
+//userdefined instance methods
+ public void m1()
+ {
+ //logic
+ }
+ 
+ public void m2()
+ {
+ //logic
+ }
+ 
+ //predefined static method
+ 
+ publi static void main(String[] args)
+ {
+ 
+
+ }
+}
+   
+
+why main() method is mandatory in every java program?
+
+ ->java execution starts from main()
+ 
+ ->jvm internally calling main()
+ 
+ 
+simple program for addition of two numbers:
+````````
+
+public class Test9 {
+
+	//user defined  instance method
+	public void add(int x, int y) {
+		System.out.println("the sum is " + (x + y));
+	}
+
+	public static void main(String[] args) {
+
+		//static area
+		System.out.println("i am main method");
+		
+		Test9 obj = new Test9();
+	    //call the add()
+		obj.add(20, 30);
+		
+	}
+}
+
+int x = 100;
+
+int x = 100,200;
+
+requirement:
+ i want to store  1 crore values?
+ 
+ 
+only one variable
+
+ storing multiple values inside a single variable.
+ 
+   ->by using Arrays concepts
+   
+   
+   int x[];
+   x=new int{1,2,3,4};
+   
+
+in arrays, values are stored and accessed based on
+index number.
+
+index value starts from 0
+
+
+if size 3 , maximum index is 2
+
+if size is n , maximum index is (n-1)
+
+example:
+`
+
+public class Test9 {
+
+
+	public static void main(String[] args) {
+
+		int x[];//array variable declare
+		x = new int[3];//instantiation
+		
+		//assigning the values 
+		x[0]=100;
+		x[1]=200;
+		x[2]=300;
+	
+		//printing 
+		
+		System.out.println(x[0]);
+		System.out.println(x[1]);
+		System.out.println(x[2]);
+		
+		//using for loop
+		System.out.println("using for loop displaying array elements");
+		for(int i=0;i<3;i++)
+		{
+			System.out.println(x[i]);
+		}
+		
+	}
+}
+
+
+assignment:
+```
+declare one string variable and assign 3 city names
+like hyderabad,pune,chennai and then display those
+values using for loop?
+
+
+program:
+``
+public class Test9 {
+
+
+	public static void main(String[] args) {
+
+		String cityNames[]; //array variable declare
+
+		cityNames=new String[3]; //instantiation
+
+		//assigning the values
+
+		cityNames[0]="hyd";
+		cityNames[1]="pune";
+		cityNames[2]="chennai";
+
+	
+
+		//using for loop
+    
+		for(int i=0;i<3;i++)
+
+		{
+
+		System.out.println(cityNames[i]);
+
+		}
+}
+}
+
+example:
+```
+
+public class Test9 {
+
+
+	public static void main(String[] args) {
+
+		/*
+		 * String cityNames[]; //array variable declare
+		 * 
+		 * cityNames=new String[3]; //instantiation
+		 * 
+		 * //assigning the values
+		 * 
+		 * cityNames[0]="hyd"; cityNames[1]="pune"; cityNames[2]="chennai";
+		 */
+
+		 String cityNames[] = {"hyd","pune","chennai"};
+		 
+		 int x[] = {100,200,300};
+		 
+		 float marks[]= {38.5f,45.6f,24.5f};
+	
+
+		//using for loop
+    
+		for(int i=0;i<3;i++)
+
+		{
+
+		System.out.println(cityNames[i]);
+		System.out.println(x[i]);
+		System.out.println(marks[i]);
+
+		}
+}
+}
+
+
+
+array variable intialization:
+`````
+datatype variablename[] = {value1,value2,value3};
+
+command line arguments:
+```
+the arguments which we are passing to main() , those
+arguments we call it as command line arguments.
+
+
+command line arguemnts are by default String type.
+
+
+while we are executing the program, whatever the values we
+are passing , those values will be submitted to main()
+of String type.
+
+
+
+example:
+``````
+
+public class Test9 {
+
+	public static void main(String[] args) {
+
+		for(int i=0;i<3;i++)
+		{
+			System.out.println(args[i]);
+		}
+	}
+}
+
+
+
+
+
+**************
+wrapper classes
+****************
+
+
+```
+example:
+```
+
+public class Test9 {
+
+	public static void main(String[] args) {
+
+		int x = Integer.parseInt(args[0]);
+		int y = Integer.parseInt(args[1]);
+		int z = x+y;
+		System.out.println("sum of two numbers is " + z);
+	}
+}
+
+
+
+from above example, Integer is the pre-defined class available in java.lang
+package 
+
+in this class we do have parseInt(String) which accepts string as an 
+argument and returns integer.
+
+Since parseInt() is a static while we are calling we have to call w.r.to
+class name i.e Integer.
+
+
+         ->int returnvalue = Integer.parseInt(323);
+		 
+
+
+
+byte   ->Byte  -> parseByte(String)(String --> byte)
+short  ->Short -> parseShort(String)(String -->short)
+int    ->Integer
+long   ->Long
+float  ->Float
+double -> Double
+char   ->Character
+boolean ->Boolean
+
+
+
+these classes are known wrapper classes.
+
+->wrapper classes are the classes for the purpose of converting 
+String type to corresponding datatypes and viceversa.
+
+->write a java program for calculating annaual income of the employee salary?
+
+        ->salary of the employee --> 2000
+		  no.of months in the year --> 12
+          annual income of the salary --> 24000
+		  
+		  
+		  
+program:
+```
+
+public class Test9 {
+
+	public static void main(String[] args) {
+
+		float salary = Float.parseFloat(args[0]);
+		
+		float noOfMonths = Float.parseFloat(args[1]);
+		
+		float annualSalary = salary * noOfMonths;
+		
+		System.out.println("annual salary of an employee is " + annualSalary);
+		
+	}
+}
+
+
+->write a java program which takes two values and displays their product?
+
+public class Test9 {
+
+	public static void main(String[] args) {
+
+		double firstNumber = Double.parseDouble(args[0]);
+		double secondNumber = Double.parseDouble(args[0]);
+		double product = firstNumber * secondNumber;
+		System.out.println("product of given two numbers is " + product);
+
+	}
+}
+
+
+
+write a java program which gives square of the given number?
+
+sample input and output:
+```
+2 --> 4
+10 -->100
+
+
+public class Test9 {
+
+	public static void main(String[] args) {
+
+		
+		  double firstNumber = Double.parseDouble(args[0]);
+		  double square = firstNumber*firstNumber;
+		 
+		  System.out.println("square of given number is " + square);
+
+
+	}
+}
+
+
+assignment:
+```
+do the same program by writing one line logic?
+
+
+note:
+``
+wrapper classes are existed in java for every datatype.
+
+
+
+***********
+oops features
+**********
+
+what is difference between oops and oopl?
+=======================================
+	 
+	 oops===> methodologies and features
+	 oopl==> object oriented language
+	 
+	  the methodologies which are used by oop langauges
+	  
+	  
+	  what are the oop features?
+	  -----------------
+	  we have 4 types of oops features
+	  
+	  Inheritance
+	  polymorphism---->performance
+	  abstraction
+	  Encapsulation---->security
+	 
+        class:
+		       have seen a car
+			   have seen a bus
+			   
+			   we cannot see a car, we can see types of cars, swift,creta,innova
+			   we cannot see a tree, we can see types of trees, -----
+			   
+			   class is a bluprint , it is collection of members with member functions
+			   class is logical entity.
+			   
+			   object; instance of a class is called object, allocating suficient memory space of objects which are 
+			   in class.
+			   every object has state and behaveiour.
+			   car has color stateb behaviour driving
+			   
+			   object is the super classs class of all classses in java.
+			   java has 11 methods
+			   some are final, without final we cn change.
+			   
+
+
+==>class is a logical entity means like we can say it a blue print.
+      by using blue print we can create number of objects.
+	  
+	  eg: DNA ----------->to create one nd more
+
+def: class is a collection of varibles and member methods.
+
+eg:
+
+class Test{
+
+   //variables
+   //methods
+   //constructors
+   
+}
+
+
+what is Object?
+===============
+instance of a class.
+
+allocating sufficiant of memory space to class properties .
+
+object has state and behaviour
+
+eg:  dog has state=color: black
+     gog has behaviour= tail wagging
+	
+
+
+	 
+Inheritance:
+===========
+
+inheritance is concept of "aquring" properties from one class to another class
+                                                      parent to child
+                                                      base class to derived class
+
+
+--->>if we want to achive inheritance we need to use two keywords::  extends , implements													  
+	 
+	by using inheritance we will get performance but,if any one ask you you need to tell
+	      one term:: "code reusebility"
+		  
+		  lets say
+		  
+		  class Parent
+		  {
+		  
+		  //200 variables
+		  //1000 methods
+		  
+		  
+		  
+		  }
+   	    
+		 class A  extends Parent
+		 {
+		 
+		 //10 methods
+		 
+		 
+		 }
+	 
+	 
+	 *if  we want use those 200 variables and 1000 methods one way is: write all the code into A class
+	         if you do like that the line of code increasing and degrade the performance also
+	 
+	 *By using "extends" parent the properties whih have in parent all come to A. not physically logically 
+we get , we can call and use those properties. (we will get performance)
+
+
+types of inheritance:
+----------------------	 
+
+1. single level-------->one parent one child
+
+2. multi level----------->two parantes one child(grand parent-parent-child)
+
+3. hirarchial level------->one parent two childs
+
+
+4. hybrid level--->combination of any two inheritances
+
+****5. multiple level---->two childs one parent.
+
+eg:
+
+
+class Calculator{
+
+	 static void sub() {
+		int a=63;
+		int b=87;
+		System.out.println(a-b);
+	}
+
+	static void mul() {
+		int a=53;
+		int b=37;
+		System.out.println(a*b);
+	}
+	
+}
+
+ class A  {
+	 
+	static  void sum() {
+			int a=53;
+			int b=37;
+			System.out.println(a+b);
+			
+		}
+		
+}
+public class Test1 extends A  {
+	
+	static void div() {
+		int a=23;
+		int b=67;
+		System.out.println(a/b);
+	}
+	public static void main(String[] args) {
+		
+		//Test1.sub();
+		
+		
+	}
+
+}
+
+
+eg:
+===
+
+
+class Calci{
+	
+	void sum() {
+		System.out.println("i am from class class A");
+	}
+	
+	int display(int a, int b) {
+		return a-b;
+		
+	}
+}
+
+class B{
+	
+	void sum() {
+		System.out.println("i am from class class B");
+	}
+	
+	String print(String name) {
+		return name;
+		
+	}
+}
+public class Test3 extends A {
+	
+	public static void main(String[] args) {
+		
+		Test3 obj= new Test3();
+		
+		
+		obj.sum();
+		
+	}
+
+}
+
+******************************************************************************************
+
+
+day 6:
+======
+
+class: 
+
+   class is a colletion of variables and member methods.
+   classes we have methods those methods we can call "concrete methods" or "implemented methods"
+
+
+abstraction:
+--------------
+abstraction is the process of hiding the data showing the functionality.
+
+eg:  watsup send button: we know the function how to use but we dont knoew the backend funtionality.
+
+abstract class is a collection of both abstract and non abstracct methods.
+
+by using abstraction we will get 0 to 100% security.
+
+
+
+abstract class Claculator{
+
+
+void sum(int a, int b){ //concrete or implemented method
+
+System.out.println("sum of two numbers :" (a+b));
+}
+
+// you need to provide implementation otherwise make your method as abstract
+       abstarct void sub(); //whenever you mke ur method abstract, u need to make your class abstrct 
+
+}
+
+class Test{
+
+void mul(int a, int b){ //concrete method
+
+System.lut.println("mul of two numbers is:" +(a*b));
+
+}
+public static void main(String args[]){
+
+  Test t= new Test();
+
+
+}
+
+}
+
+interfaace:
+========
+interface is a blueprint of a class.
+
+interface has only abstract methods
+
+by default interface has absract methds
+
+in interface we will get 100% abstraction
+
+
+
+
+
+class  to class--------extends
+class to interface -----implemnts
+interface to class -----implements
+interface to interface----->extends
+
+*********************************************************************************
+
+day 7
+=====
+
+polymorphism:
+-------------
+poly means --many   morphism means---forms
+
+ eg: a man can do different tasks at a time
+     a man has different behaviours depends on situation
+	 
+	 in java we have + operator
+	 
+	 here this operator works has two ways
+	                    to add the two numbers =============12+13=25
+						 add the string to any values=========="hello"+12=hello12
+				**we can say opearator over loading.
+		to achive polymorphism we have two ways
+		   1. Method Overloading
+		   2.Method overriding
+		   
+Method Overloading:
+------------------
+method name is same but signature is different
+                          1.no of params different
+						  2.type of params diffrnt
+						  3.order of params dffrnt
+=
+
+eg:
+----
+
+
+
+
+class Claculator{
+
+
+public void add(int a, int b, int c)
+{
+System.out.println("addition of three int numbers :"+(a+b+c));
+
+}
+
+public void add(int a, int b)
+{
+System.out.println("addition of two int numbers :"+(a+b));
+
+}
+
+public void add(float a, float b)
+{
+System.out.println("addition of two float numbers :"+(a+b));
+
+}
+public void add(int a,float b)
+{
+System.out.println("addition of  int ,float numbers :"+(a+b));
+
+}
+public void add(float a, int b)
+{
+System.out.println("addition of  float, int numbers :"+(a+b));
+
+}
+public sttaic void main(String args[]){
+
+Calculator cal= new Calculator();
+
+cal.add(14,23); //this method check where we have both int params and then add thevalues
+cal.add(10,23.5f); //it will check the int,float value and add the both values 
+cal.add('a','d'); //type promotion //internally it will check the ASCII value but the type is dfrnt
+
+
+}
+
+}
+
+type promotion:
+-----------------
+less datatype can store large size of datatype --->forward it will go 
+            byte-->short==>int-->long-->
+			large dattatype cannot store small datatype
+			->(wrong)long-->int
+
+
+
+Method Overriding:
+----------------
+
+here method name is same but implementation is different
+
+the method method which we using in the parent if we are not satisfied with that then we can override and change
+  impleemention in the child class.
+  
+  
+  class OldTv{
+  
+     void screen(){
+	 
+	 System.out.println("lcd tv with low resolution display");
+	 }
+	 void sound(){
+	 
+	   System.out.println("the sound clarity is good");
+	 
+	 }
+  }
+public class NewTv extends OldTv{
+
+   @Override
+  void screen(){
+  
+      System.out.println("led tv with high resolutons"); 
+  }
+  
+  public static void main(String args[]){
+  
+  
+         NewTv nt= new NewTv();
+		 
+		 nt.screen();
+		 nt.sound();
+  }
+
+}
+
+***************************************************************************
+day 8:
+============
+
+This and super are two keywords.
+
+This:: this is a keyword to represent current class properties(variables,methods,constructors,object)
+
+super:: super is a keyword to represent parent classs properties(variables,methods,constructors)
+
+
+
+eg:
+---
+class Parent{
+ 
+ 
+ void m1(){
+ Sop("i am parent method");
+ }
+}
+
+class Test extends Parent{
+
+int salary=34000;
+
+void getSalary(int salary){
+  int salary=43000;
+   Syso("salry is :"+salary);
+   Syso(this.salary);
+   super.m1();
+}
+
+public static void main(String args[]){
+
+  Test t= new Test();
+  
+  t.getSalary();
+
+}
+}
+
+final:: 
+=====
+final is a kwyword it can be applied on three places variable, method, class , once we applied any one of these
+  the value wont change, it is fixed.
+  
+final:
+======
+class Parent{
+	final int age=88;
+	
+	void m1(int age) {
+		this.age=++age;
+		System.out.println("am parenty class m1 method :"+this.age);
+	}
+}
+
+public class Test extends Parent {
+	void m1(int age) {
+		this.age=--age;
+		System.out.println("am child class m1 method :"+this.age);
+	}
+public static void main(String[] args) {
+	
+	Test t= new Test();
+	t.m1(60);
+}
+}
+
+
+
+
+PACKAGES:
+==========
+packages are collection of classess, interfaces, and sub classes.
+
+the main purpose of pacakges are
+  easily maintance
+  providing acces protection
+  removes naming collisions
+ 
+* pacakge statement should be the first statment line in the source file.
+
+pacakges are two types:
+====================
+1.built in pacakges/system defined
+2.user defined pacakages
+
+
+1.Built in pacakges are defined by the sunmicro systems also called pre defined pacakages
+
+          java.lang.System(default pacakge)
+   java==pacakge
+   lang===>sub package
+   System==>class
+   
+   we have around 6000 pre defined packages in java API.
+   whenever we need use import from the libreary. just import the pacakge and use functionality.
+   
+   
+  java.lang, io, awt, sql, .......
+  
+  how to access from pacjkge to another pacakage:
+  -------------------------------------------
+     three ways to access one pacakage to another pacakage.
+	 
+	 1.import pacakge.*    (all the classs,interfaces of this pacakge will imported except sub pacakges)
+     
+     2.import package.classname  (only that pacakge related class can be access)
+
+     3. fully qualified name   (only declared class will be accesed)
+	 
+  
+  userdefined:
+  ==========
+  we can defien our own pacakges to maintaine our projects and we can find easy way
+  
+  how to create pacakge:
+
+ 1. write the java program with pacakge name.
+       compile:  javac -d . filename.java
+	                aftre compiling one given pacakge folder will created in the we have our class file.
+					
+ 2. execute the program by using complete pacakge name with class name
+       execte :    java packagename.classname
+	    
+
+Access Modifiers:
+=================
+Access modifiers are basically keywords in java .
+ in java we have also "non-access " modifiers such as static, abstract, syncgronized, native, volatile, transient
+ these are the non-access modifiers in java.
+to modify the scope or accessing 
+
+we have 
+
+public , protected, default, private in java
+
+
+eg: i creatted two packages  
+   
+
+com.kt.pack1
+
+class Test{
+
+public statikc void main(String args[]){
+
+
+}
+}
+
+
+com.kt.pack2
+
+class Hacker{
+
+
+public static void main(String args[]){
+
+//if i want to crete object of Test class we have to import the pack1 into pack2
+// that class modifier is public tahts y we can access any where.
+
+Test t= new Test();
+}
+
+}
+
+
+
+Encapsulation:
+================
+binding / grouping data memeberes with member methods
+                    variables with corresponding methods
+					
+					
+					class Student{
+					
+					  private int sid;
+					  private String sname;
+					  
+					  
+					  
+					  //setters and getters
+					
+					}
+					
+***************
+Strings
+***************				
+					
+	
+	String , StringBuffer, StringBuilder
+	------------------------------------
+	
+	String is collection of charecters or group of charecters
+	
+	String is predefined class present in ---java.lang package
+	String is  non primitive datatype---
+	eg:  "Divya" --->store in double quotes
+	
+	String orgName="capgemini";
+	
+	
+	there is two ways to create the object in String:
+	-----------------------------
+	
+	1. String literal way
+	
+	    String str="soma";
+		
+	2. By new keyword
+	
+	String str= new String("soma");
+	
+	
+	String is immutable (final)
+	   once we assign the value it is fixed wont changed 
+	
+	
+	eg:
+	====
+	
+	
+	
+	String name="capgemini"; //immutable
+	String name1="capgemini";
+	
+	name.concat("India");  //capgemini india   //gc
+	
+	*but in this case string is immutable the value wont change.
+	      
+		  
+	Sop(name.equals(name1));  // true/false  //equals method
+	
+	Sop(name==name1);  //references are reffering values
+	
+	**String class "equals" method will check the values are same or not
+	** == operater will check the address of the objects pointing same or not
+	
+	
+	===>heap---->scp
+	          whenever we store the liter way the values will be stored in the heap in SCP area
+			      in SCP duplicates are not allowed.
+				                    for that we can get the performanca low memoryspace
+	
+	2.By using new Keyword:
+	========================
+	
+	String str= new String("divya");  
+	
+	String str1= new String("divya");
+	
+	*System.out.println(str.equals(str1));  //true/false
+	*System.out.println(str==str1);  //true/false
+
+
+         ** we know equals method will check the values 
+		 ** here whenever we add new keyword seperate object will be created in HEAP area and scp.
+		          if scp already there not created in the scp.
+		* HEAP area duplicates are allowed why means every time new object will created .
+		**== check the refrence are reffering different objects thats why it is false.
+		
+StringBuilder:
+==============
+String buffer is mutable, we can change it
+
+StringBuffer sb= new StringBuffer("capgemini");
+StringBuffer sb1= new StringBuffer("capgemini");
+
+
+System.out.println(sb.equals(sb1));  //true/false
+System.out.println(sb==sb1);  //true/false
+	
+	**here equals method will get false how means in this case equals method is from OBJECT class 
+	     b asically equals method is from object class,  but String class can changed the implementation
+		              thats why in String class equals method will checkedd values.
+					  
+	**== will get false
+	
+	**StrungBuilder methods are not synchronized.
+	
+	** StringBuffer methods are synchonized
+	
+	open CMD:; javap java.lang.StringBuilder
+StringBuffer:
+----------------
+StringBuffer is Synchronized 
+
+********************
+Files IO
+**************
+
+file means document , if we wnat write any dat we need to write in the document ryt?
+ nomally how we can create file---?
+    By using java we ca create a file ,write the file , we can read the file by using IO Streams
+	
+IO:
+----
+why we need of IO?
+--
+input and output
+
+eg: i want store employee information, normal what we do we create a text file and we write info in that file
+       this is normal way.
+	   
+	**we can do same thing by using java application. we need to go for IO concept.
+	
+	  we can create a java file in that we can write information and i can send to anyone.we can write,read,update.
+	  
+
+How to create a file:
+---------------------
+
+*File is a predefined class, by using File we can create a object of that file in taht we can write file name.
+            this File present in java.io we need to import.
+              File f= new File("welcome.txt");
+			  
+			  *we have one predefiend method to create new file by using file object we can create a file.
+			  
+			  f.createNewFile();  //it handle the ioException
+			  
+			  when you execute one file will generate under your test file. 
+				
+	*if you want create a folder we have one predefined instance method.provide name in file constructor and call the 
+	            the method.
+	             f.mkdir();
+			  
+	
+	
+	
+	** we know how to create a folder, and file 
+	   now we are going to how to write data into a file.
+	   
+	       we have 3 pre defined classes for that
+		     FileWriter, BufferedWriter, PrintWriter
+			 
+			 FileWriter fw= new FileWriter("welcome.txt"); // to write data we can use existing file or create new 
+			                                                      file.
+																  
+			      // to write the data into file we have one method write().
+				  
+				    fw.write("hello");
+					fw.write("welcome");
+					fw.write("java");
+					fw.write("97");
+					fw.close(); // recomnded to close
+					 Sop("data written succusfully");
+					 
+	  o/p:: hellowelcomejavaa
+	  
+	  **here the  drawback of FileWriter is only it can write charecters data,we canot write numbers
+	
+	BufferedWriter:
+	==============
+	here in the buffereWriter you need to pass fileWriter object in the bufferedWriter constructor.
+		
+	FileWriter fw= new FileWriter("welcome.txt");
+  BufferedWriter bw= new BufferedWriter(fw);
+      
+	      bw.write("hello");
+					bw.write("welcome");
+					bw.write("java");
+					bw.write(97);
+					bw.close(); // recomnded to close
+					 Sop("data written succusfully");
+  
+
+**here the  drawback of BufferedWriter is same as FileWriter it can write charecters data,we canot write numbers
+
+
+PrintWriter:
+==============
+
+compare to other two writers printwriter is the best to write the data into the file
+
+FileWriter fw= new FileWriter("welcome1.txt");
+PrintWriter pw= new PrintWriter(pw);
+                                           //we have one method here to write "println()"
+                    pw.println("hello");
+					pw.println("welcome");
+					pw.println("java");
+					pw.println(97);
+					pw.close(); // recomnded to close
+					 Sop("data written succusfully");
+
+
+
+FileReader:
+==============
+
+To Read a file :
+==============
+to read a file we have two classes
+fileReader, BufferedReader
+
+to read the data from the file 
+
+
+
+FileReader fr= new FileReader("welcome.txt");
+
+  // to read the data we have one oredefined instance method "read()"
+    
+	   while(fr.read()!=-1)
+	   {
+	       char c= (char)fr.read();
+		   System.out.println(c);
+	   }
+
+**we dont know the how many number of lines in the file , we need to print
+         we are going to use "while loop"
+		     * in the file the line is end of the loop represent "not equals to -1"
+			     * am stooping the loop when file is empty, in java end of the file means "-1"
+	**But in this fileReader drawback is read the charecter  by charecter
+	         ** we need to type cast , why means read method will return the int, we need to convert "char"
+			 
+			
+	**
+	
+	FileReader fr= new FileReader("welcome1.txt");
+	BufferedReader br= new BufferedReader(fr);
+	
+  String data=  br.readLine();
+  
+  while(data!=null){
+  
+    System.out.println(data);
+	data=br.readLine();
+  }
+	
+	//file, fileWriter, BufferedWriter, PrintWriter, FileReader, BufferedReader-->pre defined classes
+	******************
+Scanner class:
+--------------
+**********************
+Scanner is a class in java present in "java.util" package
+   java provides various ways to provide input from the keyboard.scanner is one of them
+   
+  * Scanner class provide many methods to read and parse various primitive values 	
+   * Scanner class provides nextXXX() methods to return the type of values...
+   
+   Scanner sc= new Scanner(System.in);
+       ==>System.in==> provide input from the "user"
+	
+	
+	
+	class Test{
+	
+	   public static void main(String args[]){
+	   
+	              Scanner sc= new Scanner(System.in);
+				 
+				 System.out.println("Enter your first number");
+				 //by seeing this line user can enter firdt number from the keyboard
+				 //by using scanner object will get the first number, we have one method
+				     
+					 int fNum   =sc.nextInt();
+					 
+				System.out.println("Enter Second Number");
+                 int Snum= sc.nextInt();				
+	   
+	           System.out.println("sum of two numbers:" +(fNum+Snum));
+	   
+	   
+	   }
+	
+	}
+
+		
+
+
+
+
+****************************
+		
+					Exception Handling:
+===================
+***************************************
+basically evaeryday life we are facing with exception handling 
+
+eg: gmail login,fb login 
+      whenever we are enter wrong credentials we will get some error messege"Please Enter Valid Credentials"
+	   without exception handling we will get "System error messages" eg:ORA2753 like this
+	     with exception handling we will get"user friendly messagaes"
+
+
+def: Exception handling is a mechanism converting system error messages into userfriendly messages by using
+      Exception handling.
+
+
+Without Exception Handling:
+===========================
+1. abnormal Termination
+
+2. System Defined error messages
+	
+	
+with Exception Handling:
+--------------------------
+1. Normal Termination
+
+2. User Friendly error messages
+
+
+
+	By using scanner class we are going to write one example will see the difference with or without exception 
+	   handling mechanism.
+	
+	
+	eg:
+	----
+	
+	class Test{
+	
+	   public static void main(String args[]){
+	   
+	              Scanner sc= new Scanner(System.in);
+				 
+				 System.out.println("Enter your first number");
+					 int fNum   =sc.nextInt();
+				System.out.println("Enter Second Number");
+                 int Snum= sc.nextInt();				
+	           System.out.println("sum of two numbers:" +(fNum+Snum));
+			   
+			   System.out.println("remainong lines of code");
+	   }
+	
+	}
+	
+	o/p:
+	===    if we are passing correcct credentials executes syccfully.
+	               if i enterd incorrect values, ssystem will generates messages, and terminates abnormally(sudenly   )
+				  
+				  
+	By using exception handling will get userfriendly messages and execute remaining lines of code executed
+	
+	       
+		   
+		   
+		   
+		   
+		   
+Errors are of two types. 
+They are 
+
+1)compile time errors  		  
+2)run time errors (exceptions)
+
+System.out.println();
+
+
+
+** Compile time errors are those which are occurring because of poor understanding of the language.
+
+
+** Run time errors are those which are occurring in a program when the user inputs invalid data.
+
+The run time errors must be always converted by the JAVA programmer into user friendly messages by 
+
+using the concept of exceptional handling.
+
+
+Types of Exceptions
+===================
+We have 3 types of exceptions
+
+1. Checked Exception
+2. Unchecked Exception				Object   java API
+3. Error
+
+							Throwable
+
+					1)pre defined 											2)user defined
+
+		1)asynchronous      		 2)synchronous
+		java.lang.Error
+		deals with hardware 			deals with program run time errors
+		and external problems				java.lang.Exception     java.lang.RunTimeException
+												1)checked			    	  2)unchecked
+		*BootStrapMethodError						(hard disk)						(main memory)
+		*InternalAccessError
+		*InternalError		
+		*SecurityException																*ArthimeticException
+		*OutofMemeoryError							*FileNotFoundException		    	*NullPointerException
+		*StackOverflowError							*ClassNotFoundException 			*ClassCasteException
+		*UnknownError								*IllegalAccessException				*IndexOutOfBoundsException
+		*VirtualMachineError						*UnsupportedOperationException		*ArrayIndexOutOfBoundsException
+													*InterrpuedException		        *StringIndexOutOfBoundsException
+																						*IlligalArgumentException
+																						*NumberFormatException
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   class Test{
+	
+	   public static void main(String args[]){
+	   
+	              Scanner sc= new Scanner(System.in);
+				 
+				 System.out.println("Enter your first number");
+					 int fNum   =sc.nextInt();
+				System.out.println("Enter Second Number");
+                 int Snum= sc.nextInt();		
+				 
+				 try {
+	           System.out.println("sum of two numbers:" +(fNum+Snum)); //this line we get execption thats y we put in try
+			   }
+			   catch(Exception e){
+			   System.out.println("enterd invalid data, please enter valid data");
+			   
+			   }
+			    System.out.println("remainong lines of code");
+	   }
+	
+	}
+	
+	
+	
+public class Test1 {
+	public static void main(String[] args) {
+		try {
+			
+		int a[]=new int[4]; //0,1,2,3
+		a[4]=89;
+		
+		int b=30/0;
+		
+		
+		}
+		catch(ArithmeticException ae) {
+			System.out.println("dont enter denominotar as zero");
+		}
+		
+		catch(NullPointerException ae) {
+		System.out.println("got the null in the given input");
+		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("out of the index");
+		}
+		
+		finally {
+			System.out.println("always executed");
+		}
+		System.out.println("remaing 1000 lines code");
+	}
+
+}
+
+public class Exception2 {
+	public static void main(String[] args) {
+
+		try {
+
+			int c = 12 / 4;
+			try {
+				System.out.println("division");
+				int b = 30 / 0;
+			} catch (ArithmeticException ae) {
+				System.out.println(ae);
+			}
+
+			try {
+				int a[] = new int[3];
+				a[3] = 4;
+			} catch (ArrayIndexOutOfBoundsException ae) {
+				System.out.println(ae);
+			} finally {
+				System.out.println("always will execute finally block");
+			}
+			System.out.println("remaining try statemnt");
+
+		} catch (Exception e) {
+			System.out.println("handled");
+		}
+		System.out.println("normal execution");
+	}
+}
+
+
+public class Exception3 {
+
+	public static void main(String[] args) {
+		
+		try {
+		int a[]=new int[5];
+		a[5]=30/0;
+		String s=null;
+		int x= Integer.parseInt(s);
+		System.out.println(s.length());
+		System.out.println("no error "+a[4]+" "+x);
+		}
+		
+		catch(ArrayIndexOutOfBoundsException ae) {
+			System.out.println("please enter valid index");
+		}
+		catch(ArithmeticException e) {
+			System.out.println("dont enter denominator zero");
+		}
+		catch(NumberFormatException e) {
+			System.out.println("we cant convert String to number");
+		}
+		catch(Exception e) {
+			System.out.println("unable find length of the string ");
+			//e.printStackTrace();
+			//System.out.println(e.getMessage());
+		}
+		finally {
+			System.out.println("executes every time to close the connections");
+		}
+		System.out.println("remaining lines of the code");
+	}
+}
+
+
+
+
+class ThrowEx{
+
+     public void pass(int marks){
+	     
+		  if(marks<35) 
+		    throw new ArithmaticException("you are failed");
+	 else
+	 {
+	    Syso("you are passed :" +marks);
+	 }
+}
+    pubic static void maon(String args[]){
+	
+	         ThrowEx m= new ThrowEx();
+			 m.pass(33);
+	
+	} 
+
+}
+
+
+how to create user defined exceptions:
+--------------------------------------
+ take your class and your class must be extends to any other parent exception
+
+1.IdNotFoundException extends RuntimeException/Exception
+
+2. your class need to take param constructor
+
+
+eg:
+
+class MyException extends Exception{
+
+    private int age;
+	
+	public MyException(int age){
+	   this.age= age;
+	}
+	
+	public String totring(){
+	   return "you are not eligeble for vote:"+age;
+	}
+}
+public class Exception6{
+
+     static void validation(int age) throws MyException{
+	      if(age<18)
+		           throw new MyException(age);
+				else
+				Syso("you are eligeble for vote");
+	 }
+	 
+	 public static void main(String args[]) throws MyException{
+	 
+	   Exception6.validation(16);
+	   Syso("rest of the code");
+	          
+	 }
+}
+
+
+
+
+Mutithreading:
+================
+                          multitasking:
+						  ==================
+			executing several tasks simulteniously is called 
+			   types of multitasking we have
+			   
+			   process based                       thread based
+	
+	1.executing several tasks simulteniously where each task seperate indipendent different process i sknwon as
+	    eg: vlc, notepad++,
+		*best suitable for OS level---
+	2.execting several tasks simulteniously where each task seperate independent of same program
+	   eg: notepa++
+	   *Best suitable for programatic lvel
+	   if we have 10000 lines of code 5, 5 are individual but no relation thean its sepearated but same program.
+	   
+**compared to old languages java is easy to create multithrede applications, bcz inbuilt we have rich API
+
+
+advtages: reduce the response time and increase the performance
+
+applied in: multimedia applications
+            web server applications
+			develope animations, vedio games
+			
+thread is a flow of execution, its is a light weight process whereas process is heavy weight.
+   how to create a thread?
+   
+creating thread in two ways:
+--------------------------
+1. By extends Thread class
+
+2. By implementing Runnable interface
+
+
+
+class Calculator implements Runnable
+{
+
+@Override
+
+void run()
+{
+
+  for(int i=0;i<5;i++){
+  
+      System.out.println("child thread");
+  }
+}
+
+public static void main(String args[])
+{
+
+Calculator cal= new Calculator();
+
+Thread t= new Thread(cal);
+
+t.start();
+
+}
+
+}
+
+**thread is predefined class present in java.lang package
+**Runnable is the interface: functional interface where we have only one abstract method(sam)
+  **In runnable interface we have run method we ned to implement the run method, the code you need to write 
+        in the run method.
+**if you want start a thread start method present in Thread class , the implemented class object must pass 
+  the thread class object, then we can stat the thread.
+**this start method will invoke the run method inside.
+**if you call run method its like normal method calling.
+
+
+
+By extending thread class:
+===========================
+
+
+class Calculator extends Thread
+{
+
+@Override
+
+void run()
+{
+
+  for(int i=0;i<5;i++){
+  
+      System.out.println("child thread");
+  }
+}
+
+public static void main(String args[])
+{
+
+Calculator cal= new Calculator();
+
+    cal.start();
+
+}
+
+}
+	
+getting and setting name of thread:
+====================================
+every thread has some name if we want get the the name we can by using predefined methods
+
+class MyThread extends Thread{
+
+  public void run(){
+     Syso("child method");
+	 Syso(Thread.currentThread.getName()); // thread-0
+	 
+	 Sop("child thread:"+Thread.currentThread.getName()); //childthread: soma
+  }
+psvm(String args[]){
+
+MyThread t= new MyThread();
+
+t.start();
+t.setname("soma");
+
+Syso(Thread.currentThread.getName());  // main
+
+Thread.currentThread.setName("sathya prakash");
+
+Sop("main thread:"+Thread.currentThread.getNmae()); // mainThread: sathya prakash
+
+}
+}	
+
+o/p:  main
+      thread-0
+	
+	
+priority:
+==========
+every thread has some priority
+ we have three priorities for thread
+ 
+       mini-priority-----1
+       max-priority------10
+       norm-priority-----5
+	   
+	*basically the main thread has priority has 5, if you fins child priority at that same as main thread why
+bcz main inherited by child, thats why both are same priority.
+
+can we change priority of thread?
+----------------------------------
+yes we can
+
+
+class MyThread extends Thread{
+
+public void run(){
+
+Sop(child thread);
+
+
+
+}
+psvm(String args[]){
+
+MyThread t= new MyThread();
+
+t.start();
+
+Sop(Thread.currentThread.);
+
+}
+
+}
+
+
+eg:
+===
+
+package com.kt.multithreaiding;
+
+public class PriorityEx extends Thread {
+	
+	public void run() {
+		
+	
+		//System.out.println("child"+Thread.currentThread().getPriority());
+		System.out.println("child"+Thread.currentThread().getPriority());
+	}
+public static void main(String[] args) {
+	
+	PriorityEx obj= new PriorityEx();
+	obj.start();
+	obj.setPriority(9);
+	
+	
+	//System.out.println(Thread.currentThread().getPriority());
+	Thread.currentThread().setPriority(6);
+	System.out.println("main"+Thread.currentThread().getPriority());
+}
+}
+
+
+
+eg:
+==
+
+package com.kt.multithreaiding;
+
+public class MyYield extends Thread {
+
+	
+	public void run(){
+	       for(int i=1;i<=10;i++){
+		   System.out.println("child thread");
+		   Thread.yield();
+		   
+		   }
+	  }
+	
+	public static void main(String[] args) {
+		
+		MyYield OBJ=new MyYield();
+			OBJ.start();
+			for(int i=1;i<=10;i++){
+			System.out.println("main thread");
+			}
+	}
+}
+
+
+eg:
+
+
+package com.kt.multithreaiding;
+
+public class MyJoin extends Thread {
+
+	public void run() {
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("seetha thread");
+
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}
+	}
+
+	public static void main(String argas[]) throws InterruptedException {
+
+		MyJoin obj = new MyJoin();
+
+		obj.start();
+		// ------> 2 threds: main and child
+		obj.join(); // ----------->waiting main thread until compltes child
+		// if join method wants to wait only 10000
+		// join(10000)
+		for (int i = 0; i <= 10; i++) {
+			System.out.println("rama thread");
+		}
+
+	}
+}
+
+
+
+eg
+
+package com.kt.multithreaiding;
+
+public class SleepEx {
+	
+	
+	public static void main(String[] args) throws InterruptedException {
+	
+		
+        for(int i=1;i<=10;i++) {
+			
+			System.out.println("slide show : "+i);
+			
+			Thread.sleep(5000);      //throw execptio add to  method
+		}	
+	}
+	}
+
+
+eg
+
+
+package com.kt.multithreaiding;
+
+class First1{
+	
+	public  void display(String msg)//[welcome][sonali][hii]
+	{
+		
+		System.out.println("["+msg);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("]");
+	}
+}
+
+class Second1 extends Thread{
+	
+	String msg;
+	First1 obj;  //has -a relation
+	
+	Second1(First1 obj, String msg)
+	{
+		this.obj=obj;
+		this.msg=msg;
+		this.start();
+		
+	}
+	
+	public void run()
+	{
+		obj.display(msg);
+	}
+	
+}
+public class WithSynchro {
+public static void main(String[] args) {
+	
+	First1 fnew= new First1();
+	Second1 s= new Second1(fnew, "welcome");
+	Second1 s1= new Second1(fnew, "sonali");
+	Second1 s2= new Second1(fnew, "hii");
+}
+}
+
+
+eg:
+---
+
+package com.kt.multithreaiding;
+
+class Account{
+	public int balance; //5000
+	
+	public Account() {
+		balance=5000;
+	}
+	public synchronized void withdraw(int bal) {
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		balance=balance-bal;
+		System.out.println("Amount withdrawn="+bal); //500
+		System.out.println("Remaing balance="+balance);
+	}
+	public synchronized void deposit(int bal) {
+		
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	balance= balance+bal;
+	System.out.println("Amount deposited="+bal); //1000
+	System.out.println("New Balance="+balance); //5500
+	}
+	
+	public synchronized void enquiry() {
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("Available balance="+balance);
+		
+	}
+}
+class Transaction implements Runnable{
+	
+	Account obj; //has- a relation
+	
+	Transaction(Account a){
+		obj=a;
+	}
+	public void run() {
+		obj.withdraw(500);
+		obj.deposit(1000);
+		obj.enquiry();
+	}
+}
+public class ThreadSync {
+public static void main(String[] args) {
+	
+	
+	Account a= new Account();
+	Transaction w1= new Transaction(a);
+	Thread t1= new Thread(w1);
+	Thread t2= new Thread(w1);
+	t1.start();
+	t2.start();
+}
+}
+
+***************
+Arrays:
+*************
+Arrays:
+======
+
+String name="sathya";
+
+String names[]={}; //array litteral ways
+
+
+can we overload the main method
+	
+	arrays
+```
+
+variables 
+
+to store the values
+
+  int a = 100;
+  int b = 300;
+  int c = 5656;
+  
+array is a group of elements of same type/homogenious
+
+  int a = 333,34343,"ram";//compile time error inavlid
+  
+ syntax:
+   
+      <datatype> <variablename>[]= new <datatype>[5];
+	  
+  
+eg:     int x[] = new int[3];
+
+
+while we are storing the values into an arrays based on index the values
+gets stored.
+
+array index starts from 0th positon
+
+                  x[0]=100;
+		  x[1]=400;
+		  x[2]=778;
+		  
+example:
+``
+package com.capgemini.jse.arrays;
+
+public class Test1 {
+	
+	
+ public static void main(String[] args) {
+	
+	 
+	 //array varible declaration
+	 
+	 int x[] = new int[3];
+	 
+	 //assigning the values
+	 
+	 x[0]=3434;
+	 x[1]=4545;
+	 x[2]=786;
+	 System.out.println(x[0]);
+	 System.out.println(x[1]);
+	 System.out.println(x[2]);
+	 
+}
+
+}
+
+
+array variable initialization:
+==============================
+package com.capgemini.jse.arrays;
+
+public class Test1 {
+	
+	
+ public static void main(String[] args) {
+	
+	 
+	 //array variable initialization
+	 
+	 int x[] = {100,3434,343};
+	 
+	 System.out.println(x[0]);
+	 System.out.println(x[1]);
+	 System.out.println(x[2]);
+	 
+}
+
+}
+
+using for loop accessing array elements:
+-----------------------------------
+package com.capgemini.jse.arrays;
+
+public class Test1 {
+	
+	
+ public static void main(String[] args) {
+	
+	 
+	 //array variable initialization
+	 
+	 int x[] = {100,3434,343};
+	 
+	 for(int i=0;i<3;i++)
+	 {
+		 System.out.println(x[i]);
+	 }
+	 
+}
+
+}
+
+
+using for each loop accessing array elements:
+===========================================
+package com.capgemini.jse.arrays;
+
+public class Test1 {
+	
+	
+ public static void main(String[] args) {
+	
+	 
+	 //array variable initialization
+	 
+	 int x[] = {100,3434,343};
+	 
+	 //enhanced for loop (for each loop)-jdk18
+	 
+	 for(int i:x)
+	 {
+		 System.out.println(i);
+	 }
+	 }
+	 
+}
+
+
+note:
+====
+it is highly recommended to access array elements using for each loop
+
+
+note:
+======
+we can apply for each loop either on array elements or collection 
+elements.
+
+length:
+======
+
+length is an implicit variable which is used to find out the
+no.of elements of an array.
+
+
+ System.out.println(x.length) ; // 3
+ 
+ 
+example to pass an array to the method:
+=======================================
+package com.capgemini.jse.arrays;
+
+public class Test2 {
+	
+	static void min(int arr[])
+	{
+		int min= arr[0];
+		for(int i=1;i<arr.length;i++)
+		
+			if(min>arr[i])
+				min=arr[i];
+		
+		System.out.println(min);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int a[]= {33,3,4,5};
+		
+		min(a);//passing array to a method
+		
+	}
+
+}
+
+
+multi dimensional array:
+========================
+=======================
+data is stored in row and column based index.
+
+ eg: int arr[][] =  new int[3][3];
+ eg: int arr[][]={{1,2,3},{2,4,5},{5,7,4}};
+
+
+example:
+```
+package com.capgemini.jse.arrays;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		int arr[][]={{1,2,3},{2,4,5},{5,7,4}};
+
+		for(int i=0;i<arr.length;i++) {
+			
+			for(int j=0;j<3;j++)
+			{
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}
+
+
+note:
+----
+for every array,since array is an object in java, for every array internally
+proxy class gets created if we wan to get follow the program
+
+package com.capgemini.jse.arrays;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		int arr[]= {12,23,3};
+		
+		System.out.println(arr.getClass().getName());
+	}
+
+}
+
+
+array variable allows object types:
+`````
+example:
+```
+package com.capgemini.jse.arrays;
+
+
+class Employee
+{
+	int empid;
+	String empname;
+	public Employee(int empid,String empname)
+	{
+		this.empid=empid;
+		this.empname=empname;
+	}
+	
+	public String toString()
+	{
+		return empid + " " + empname;
+	}
+}
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		Employee e1=  new Employee(100,"ram");
+		Employee e2 = new Employee(101,"rajarshi");
+		Employee e3 = new Employee(102,"kinjol");
+		
+		Employee emp[]= {e1,e2,e3};
+		
+		for(Employee e: emp)
+		{
+			System.out.println(e);
+		}
+		
+		
+	}
+
+}
+	
+	
+**********************
+collections
+******************
+
+Collections:
+==============
+
+collection is a container which can store dissimilatr kind of objects,
+
+
+collection is the root interface of all interfaces
+
+  collection has three child interfaces
+     List    Set    Queue
+
+collection has some methods, these methods are all accesed by the classes of collections.
+   we  can say common methods.
+   
+
+List:
+=====
+List is the child interfcae of collection interface.
+
+in List interface 
+   *it will allow duplicates
+   *insertion order is preserved
+
+ 
+
+
+
+
+
+vector: if you want thread safety w go for vector
+
+ArrayList: if you want performance without thread safety we for aarayList.
+
+Stack: if you want work with the data "lifo" we can go for stack
+
+
+
+
+
+
+
+
+Vector:
+--------
+  in vector we have synchronized methods, if we want thread safety then we go for vector
+Arraylist:
+=========
+In ArrayList dont have sync methods, here performance is more compared to the vector, dont have thread safety.
+
+q>what is the difference beweeen ArrayList and LinkeList?
+
+if our frequent operation is insertion/deletion/updation then we go
+for LinkedList
+
+             since LinkedList follows internally doubly linkedlist algorithm.
+  
+
+if our frequent operation is retrieval then we can go for ArrayList
+ 
+               since ArrayList implements RandomAccess
+
+stack:
+-------
+if we want to perform fifo operations then we go for stack classes.
+
+
+
+eg:
+====
+
+
+
+
+class Test{
+public static void main(String args[]){
+
+//take the metods to add() from collection interface the object the values
+
+        ArrayList ar= new ArrayList();
+		//LinkedList li= new LinkedList();
+		//Vector v=new Vector();
+		//Stack s= new Stack();
+		
+		
+		
+		//here we can take any class we can add any values to it,bcz its alloww dissimilar values
+		// dupliacte are allowed , insertion order is preserved.
+		
+		
+		ar.add("sathya");
+		ar.add(true);
+		ar.add(123);
+		ar.add("soma");
+		ar.add(45.00f);
+		ar.add('s');
+		ar.add(78.00);
+		ar.add("sathya");
+		ae.add(new Integer(423));// like this we can also add.
+		ar.add(null);
+	//to print the values
+	
+	System.out.println(ar);  
+		
+}
+}
+
+
+
+eg:
+===
+
+public class Test1 {
+	
+	
+	public static void main(String[] args) {
+		
+		//creating the LinkedList object
+		
+		LinkedList al = new LinkedList();
+		
+		al.add(new Integer(100));
+		al.add(new String("ram"));
+		al.add(new Float(45.34f));
+		al.add(new Boolean(false));
+		al.add(new Integer(100));
+		al.add(null);
+		
+		
+		System.out.println("size: " + al.size());
+		System.out.println("contains ram: " + al.contains("ram"));
+		System.out.println("First element: " + al.getFirst());
+		System.out.println("Last element: " + al.getLast());
+	    System.out.println("is Empty: " + al.isEmpty());
+	    System.out.println(al.remove());
+	    System.out.println("after remove , size is " + al.size());
+	    System.out.println("removing 0th index element: " + al.remove(0));
+	    System.out.println("after remove 0th index element,size: " + al.size());
+	    
+	    System.out.println(al.remove(false));
+	    
+	    System.out.println("after remove boolean object,size is : " + al.size());
+	    
+	     al.clear();
+	     System.out.println("after clearning every object , size is : " + al.size() + " and the content is  " + al);
+	    
+	    
+	    
+	}
+
+}
+
+
+using autoboxing and autounboxing, primitive values gets converted into 
+object values and object values gets converted into primitive values.
+
+primitive to objects --> auto boxing
+
+objects to primitive -> auto unboxing
+
+this facility introduced in jdk1.5 version
+
+ 
+
+example:
+``
+package com.capg.jse.collections;
+
+import java.util.ArrayList;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+
+		ArrayList al = new ArrayList();
+
+		for (int i = 1; i <= 10; i++) {
+			al.add(i);
+		}
+		System.out.println(al);// priniting all the list elements at once
+		
+		System.out.println(" ======:using for loop displaying:====== ");
+		
+		// using for loop
+		for (int i = 0; i < al.size(); i++) {
+			System.out.println(al.get(i));
+		}
+
+		// using foreach loop
+		System.out.println("using for each loop");
+		for (Object o : al) {
+			System.out.println(o);
+		}
+
+		// using foreach loop
+		System.out.println("using for each loop-displaying only odd elements");
+		for (Object o : al) {
+			// type casting ( Object --> Integer) (Parent --> Child)->Downcasting
+			Integer i = (Integer) o;
+			if (i % 2 != 0) {
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
+
+
+generics in collections:
+````
+The generic collections disable the type-casting and there is no 
+use of type-casting when it is used in generics. The generic 
+collections are type-safe and checked at compile-time. 
+
+These generic collections allow the datatypes to pass as parameters 
+to classes.
+
+
+
+note:compile time errors are far better than runtime errors.
+
+package com.capg.jse.collections;
+
+import java.util.ArrayList;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		//collection with generics
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+	 for(int i=1;i<=10;i++)
+	 {
+		 al.add(i);
+	 }
+		
+	 
+	for(Integer i: al)
+	{
+		 if(i%2==0) {
+		System.out.println(i);
+		 }
+	}
+	}
+
+}
+
+
+	Set:
+========
+Set is also one of the pre-defined interface available in java.util package
+
+
+ ->it allows both homogenious and heterogenious
+ ->it doesn't allows duplicates
+ ->insertion order is not preserved
+ ->null insertion is possible only one time
+ 
+ 
+    implemented classes:
+	
+	    HashSet
+		LinkedHashSet
+		
+		
+example on HashSet:
+````
+package com.capg.jse.collections;
+
+import java.util.HashSet;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		HashSet hs = new HashSet();
+		
+		for(int i=1;i<=10;i++) {
+			hs.add(i);
+		}
+		
+		hs.add(10);
+		hs.add("ram");
+		hs.add(null);
+		
+		
+		
+		
+		System.out.println(hs);
+	}
+}
+
+q> what is the difference between HashSet and LinkedHashSet?
+
+  HashSet insertion order is not preserved where as
+  LinkedHashSet  insertion order is preserved.
+  
+  
+example on LinkedHashSet:
+`````
+package com.capg.jse.collections;
+
+import java.util.LinkedHashSet;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		LinkedHashSet hs = new LinkedHashSet();
+		
+		for(int i=1;i<=10;i++) {
+			hs.add(i);
+		}
+		
+		hs.add(10);
+		hs.add("ram");
+		hs.add(null);
+		
+		
+		
+		
+		System.out.println(hs);
+	}
+
+}
+
+note:
+`
+if we want to add any objects to the TreeSet objects it must 
+be 
+
+ -homogenious and comparable objects
+
+StringBuffer is the class which is not implemented from Comparable interface.
+
+
+
+public class Test8 {
+
+	public static void main(String[] args) {
+
+		TreeSet<String> ts = new TreeSet();
+
+		/*
+		 * ts.add(new StringBuffer("ram")); ts.add(new StringBuffer("baishali"));
+		 * ts.add(new StringBuffer("kinjol")); ts.add(new StringBuffer("ashmita"));
+		 */
+
+		ts.add(new String("ram"));
+		ts.add(new String("baishali"));
+		ts.add(new String("kinjol"));
+		ts.add(new String("ashmita"));
+
+		System.out.println(ts);
+	}
+
+}
+	
+
+2 dimension collection framework:
+`````
+if we would like organize the data in the form of (key,value) pair,
+then we can go for 2 dcf.
+
+ Map
+ SortedMap
+ 
+   HashMap
+   LinkedHashMap
+   HashTable
+   TreeMap
+   
+   
+properties of Map:
+````
+key,value
+ key -object
+ value - object
+ 
+ key and value objects allows both homogenious and heterogenious
+ key object is not duplicated.
+ values objects can be duplicated
+ null insertion is possible
+ insertion order is not preserved.
+ 
+ 
+ EXAMPLE:
+ ``
+ package com.capg.jse.collections;
+
+import java.util.HashMap;
+
+public class Test10 {
+	
+	public static void main(String[] args) {
+		
+		
+		HashMap hm = new HashMap();
+		
+		hm.put(100,"ram");
+		hm.put(101, "krishna");
+		hm.put(102, "krishna");
+		
+		hm.put("ram", 100);
+		hm.put(true, 345.45);
+		hm.put(null,null);
+		
+		
+		System.out.println(hm);
+	}
+
+}
+
+
+example on HashMap methods:
+`````
+package com.capg.jse.collections;
+
+import java.util.HashMap;
+
+public class Test11 {
+	
+	public static void main(String[] args) {
+		
+		
+		HashMap<Integer,String> hm = new HashMap();
+		
+		hm.put(100, "ram");
+		hm.put(101, "krishna");
+		hm.put(102, "kinjol");
+		hm.put(103, "baishali");
+		
+		System.out.println(hm.get(100));
+		
+		System.out.println(hm.isEmpty());
+		
+		System.out.println(hm.containsKey(103));
+		
+		System.out.println(hm.remove(103));
+		
+		System.out.println(hm.size());
+		
+		hm.clear();
+		
+		System.out.println(hm.size());
+		
+		System.out.println(hm);	
+	}
+
+}
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+
+keyset();
+----------
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeMap;
+//it represents ob combination of key value pair
+//entry= key , value
+//its not allowed duplicates
+//insertion order is  preserved
+public class HashMapEx {
+public static void main(String[] args) {
+	
+	TreeMap<Integer,String> hm= new TreeMap<>();
+	
+	hm.put(111, "urmila");
+	hm.put(116, "keerthi");
+	hm.put(114, "alexa");
+	hm.put(119, "sathya");
+	hm.put(113, "suresh");
+	hm.put(111, "monika");
+	
+	System.out.println(hm);
+	
+	 Set keys = hm.keySet();
+	Iterator itr= keys.iterator();
+	
+	while(itr.hasNext()) {
+		
+            Object key=itr.next();
+		System.out.println(key+"    "+hm.get(key));
+		
+	}
+
+}
+}
+
+
+Entryset:
+===========
+
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+//it represents ob combination of key value pair
+//entry= key , value
+//its not allowed duplicates
+//insertion order is  preserved
+public class HashMapEx {
+public static void main(String[] args) {
+	
+	TreeMap<Integer,String> hm= new TreeMap<>();
+	
+	hm.put(111, "urmila");
+	hm.put(116, "keerthi");
+	hm.put(114, "alexa");
+	hm.put(119, "sathya");
+	hm.put(113, "suresh");
+	hm.put(111, "monika");
+	
+	System.out.println(hm);
+	
+	Set<Entry<Integer,String>> result=hm.entrySet();
+	
+	Iterator itr=result.iterator();
+	
+	while(itr.hasNext()) {
+		
+		System.out.println(itr.next());
+		
+	}
+	
+	
+	
+}
+}
+
+************************
+DATE AND TIME
+********************
+
+Date and time:
+================
+until java 1.7 version the classes present in java.util package  to handle Daate and Time are not up to
+the  mark with respect to covienecnce and performanace.
+
+
+To overcome this problem in 1.8 oracle people introduced in joda. time api  (jod- org)
+
+
+this api developed by joda api and availble in java.Time  package
+
+
+public class Tes{
+
+public static void main(String args[]){
+
+
+LocalDate date= LocalDate.now();
+
+System.out.println(date);
+
+LocalTime time= LocalTime.now();
+System.out.println(time);
+
+}
+
+}
+
+o/p:  sytem date: 07-07-2021
+       systm time: 06:19 am
+	   
+	   
+eg:
+===
+
+
+
+public class Tes{
+
+public static void main(String args[]){
+
+
+LocalDate date= LocalDate.now();
+
+System.out.println(date);
+
+int dd=date.getDayOfMonth();
+int mm=date.getMonthValue();
+int yy=date.getYear();
+
+
+System.out.println(dd+" "+mm+" "+yy);
+//other way to display
+
+Stystem.out.printf("\n%d-%d-%d",dd,mm,yy);
+
+}
+
+}
+
+
+Note:
+=====
+if we want to define both time and date the  we should go for LocalDataTime object.
+
+
+LocalDataTime dt= LocalDataTime.now();
+
+
+
+eg:
+==
+
+
+public class Tes{
+
+public static void main(String args[]){
+
+
+LocalDataTime dt= LocalDataTime.now();
+
+Sytem.out.println(dt);
+
+
+LocalDateTime dt1= LocalDatETime.of(1994,Month.June,04,01,25);
+System.out.println(dt1);
+
+//want to disply after 6 mnths
+
+System.out.println("after six months:"+dt1.plusMonths(6));
+
+//before six months
+
+System.out.println("before six months:"+dt1.minusMonths(6));
+
+}}
+
+
+
+
+
+ZoneId:
+------
+this object can be used to represent Zone.
+
+
+eg:
+====
+
+public class Tes{
+
+public static void main(String args[]){
+
+
+//system default zone
+
+ZoneId zone= ZoneId.systemDefault();
+
+System.out.println(zone);
+
+// if we want to use perticuler zone we can
+
+ZoneId la= ZoneId.of("America/Los_Angels");
+
+ZonedDateTime Zt= ZonedDateTime.now(la);
+
+System.out.println(zt);
+
+
+
+}
+}
+
+find age:
+=========
+
+eg:
+---
+
+public class Tes{
+
+public static void main(String args[]){
+
+
+LocalDate today=Localate.now();
+
+
+LocalDate birthdy= LocalDate.of(1994,06,04);
+
+//we have to use period class
+
+Period p= Period.between(birthdy,today);
+
+Sytem.out.println("age is %d year %d months %days",p.getyear,p.getMonths(),p.getDate());
+
+
+ 
+}
+}
+
+leap year or not:
+====================
+
+eg:
+---
+
+public class Tes{
+
+public static void main(String args[]){
+
+int n= Integer.ParseInt(args[0]);
+
+year y= year.of(n);
+if(y.isLeap())
+{
+System.out.printf("%d is leap year "+n)
+}else
+{
+System.out.printf("%d is not leap year"+n )
+}
+
+
+
+
+}}
+
+
+	
+	
+	*************
+collection	case study
+	***********
+	
+employee class:
+================
+package com.kt.employeemanagament;
+
+public class Employee {
+	
+	
+	private String empName;
+	private int empSal;
+	private String empAdd;
+	private String empEmail;
+	
+	//setters and getters
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public int getEmpSal() {
+		return empSal;
+	}
+	public void setEmpSal(int empSal) {
+		this.empSal = empSal;
+	}
+	public String getEmpAdd() {
+		return empAdd;
+	}
+	public void setEmpAdd(String empAdd) {
+		this.empAdd = empAdd;
+	}
+	public String getEmpEmail() {
+		return empEmail;
+	}
+	public void setEmpEmail(String empEmail) {
+		this.empEmail = empEmail;
+	}
+	
+	public Employee() { //defalut contstructor
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Employee(String empName, int empSal, String empAdd, String empEmail) {
+		super();
+		this.empName = empName;
+		this.empSal = empSal;
+		this.empAdd = empAdd;
+		this.empEmail = empEmail;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empName=" + empName + ", empSal=" + empSal + ", empAdd=" + empAdd + ", empEmail=" + empEmail
+				+ "]";
+	}
+	
+	
+
+}
+
+
+
+client class:
+=============
+package com.kt.employeemanagament;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map.Entry;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Client {
+	public static void main(String[] args) {
+		// we need one database to store the data for that we took "Hashmap"
+		HashMap<Integer, Employee> employees = new HashMap<Integer, Employee>();
+
+		int empId = 100;
+	
+		while (true) {
+			System.out.println("EmployeeManagementApplication");
+			System.out.println("1.Add Employee");
+			System.out.println("2.Update Employee");
+			System.out.println("3.get Employee");
+			System.out.println("4.get All Employees");
+			System.out.println("5.delete Employee");
+
+			Scanner scan = new Scanner(System.in);
+
+			int option = scan.nextInt();
+
+			switch (option) {
+			case 1:
+				System.out.println("**Enter to Add Employee Details**");
+				
+				System.out.println("enter Employee Name:");
+				String empName = scan.next();
+				
+				
+				System.out.println("enter Employee salary:");
+				int empSal = scan.nextInt();
+				System.out.println("enter Employee Address:");
+				String empAdd = scan.next();
+				System.out.println("enter Employee EmailAddress:");
+				String empEmail = scan.next();
+
+				Employee emp = new Employee(empName, empSal, empAdd, empEmail);
+				
+				employees.put(empId++, emp);
+				
+				System.out.println("Employee added succusfully  " + empId);
+				break;
+			case 2:
+				System.out.println("**Enter to update Employee Details**");
+				System.out.println("Enter Employee Id to UPDATE");
+				int eid = scan.nextInt();
+				System.out.println("enter Employee Name:");
+				String ename = scan.next();
+				System.out.println("enter Employee salary:");
+				int esal = scan.nextInt();
+				System.out.println("enter Employee Address:");
+				String eadd = scan.next();
+				System.out.println("enter Employee EmailAddress:");
+				String eEmail = scan.next();
+
+				Employee emp1 = new Employee(ename, esal, eadd, eEmail);
+				employees.put(empId, emp1);
+				System.out.println("Employee updated  succusfully  " + empId);
+				break;
+			case 3:
+				System.out.println("Enter Employee id to get Employee");
+				int eid1=scan.nextInt();
+				Employee empobj=employees.get(eid1);
+				System.out.println(empobj);
+				break;
+			case 4:
+				Set<Entry<Integer, Employee>> result = employees.entrySet();
+				Iterator<Entry<Integer, Employee>> itr = result.iterator();
+				while (itr.hasNext()) {
+					Entry<Integer, Employee> finalResult = itr.next();
+					System.out.println(finalResult.getKey() + " " + finalResult.getValue());
+				}
+
+				break;
+			case 5:
+				System.out.println("Enter Employee ID to delete :");
+				int eid2 = scan.nextInt();
+				employees.remove(eid2);
+				System.out.println("Employee deleted succusfully:");
+				break;
+
+			default:
+				System.out.println("wrong selection.....");
+				break;
+
+			}
+		}
+
+	}
+
+}
+	
+	
+	
+case study:  ----------------------------------------------(19)
+===========
+layerd architecture:
+--------------------
+
+controller layer/ui---> scanner 
+
+
+bussiness layer/service layer-->business logic
+
+
+
+dao/repository layer--> bussiness logic
+
+
+************************************************************************
+                        DATA base
+***********************************************************************
+sql:
+`
+  structured qurey language
+  
+  this is a standard for all the db
+
+  propertiery language for all the db's
+  
+  SQL stands for Structured Query Language · 
+  SQL lets you access and manipulate databases
+  
+  
+what is database?
+``
+A database is an organized collection of data, so that it can be 
+easily accessed and managed. 
+
+You can organize data into tables, rows and columns.
+
+
+what is database management system:
+```````
+Database Management System (DBMS) is a software for storing and 
+retrieving users' data while considering appropriate security measures.
+
+
+  XML
+  
+
+RDBMS:(RELATIONAL DATABASE MANAGEMENT SYSTEMS)
+```````
+Microsoft Access
+MYSQL
+Oracle
+Postgres
+Ingress
+Sybase
+Redhad
+DB2
+
+  etc...
+  
+  
+ORACLE:
+`
+11G 
+
+HOW CAN YOU DOWNLOAD THIS ORACLE:
+`````
+www.oracle.com
+
+link to download oracle 11g version 
+
+https://www.oracle.com/in/database/technologies/oracle-database-software-downloads.html
+
+
+ username:
+ password: 
+ 
+ signin
+ 
+ once you installed, how can i check 
+ 
+
+
+1.connect /as sysdba;
+    conn /as sysdba;
+
+2.create user username identified by password;
+   create user abc identifiedby abc123;
+ 
+3. grant connect, resource to username;
+   grant connect,resource to abc;
+
+
+
+
+
+
+Connected.
+ 
+cl scr: clear the screen
+
+
+in sql, we have some categories of commands are there
+
+  -ddl(data definition language) - create,alter,drop,rename,truncate
+  -dml(data manipulation language) - insert,update,delete,merge
+  -dcl(data control language) - grant,revoke(deal with previleges)
+  -tcl(transaction control language) - commit,rollback
+  -drl(data query/retrieval language) - select
+  
+  
+ ddl:
+ `
+ ddl is meant for creating the database objects like 
+ table creation
+ structure alteration
+ ....
+ 
+ to define the database object or to mange the database object
+ 
+ create:
+ 
+  create is the command to create any database object
+  
+ syntax:
+ 
+ create table <tablename>(colname <datatype>(size),colname <datatype>(size)...);
+ 
+ note: sql is case in sensitive
+ 
+ both are same:
+ ``
+ Select * from student
+ seLEct * from student;
+ 
+ ex:
+ 
+  create table employee(empid number(3),empname varchar2(20));
+  
+  
+ note:
+ 
+ to perform any db operations, first we need connection from db.
+ otherwise we will get error like below
+ 
+ SQL> create table employee(empid number(3),empname varchar2(20));
+      SP2-0640: Not connected
+  
+
+ after we got the connection to check table created or not?
+ 
+ sql> desc employee;(to see the structure of the table)
+ 
+ desc - > description
+
+ sql> select * from employee;
+ 
+ no rows selected
+ 
+ note: all the ddl commands are auto commited statements.
+ 
+ once you perform any ddl , those changes will be permanently saved into the
+ database.
+ 
+ drop:
+ `
+ to drop the database object
+   drop --> structure + data
+   
+   both will be removed.
+   
+   
+
+syntax: drop table <tablename>
+
+
+Table dropped.
+
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> desc employee;
+ERROR:
+ORA-04043: object employee does not exist
+
+rename:
+`
+rename is the command which we are using to rename existing database object
+to new database object.
+
+ syntax:
+    rename <oldtablename> to <newtablename>;
+
+ ex:	
+	rename employee to emp;
+	
+	table renamed.
+	
+	
+truncate:
+`
+TRUNCATE TABLE statement is used to remove all records from a table. 
+
+It works same as DELETE statement but without specifying a WHERE clause
+
+syntax:
+  truncate table <tablename>
+
+ex:
+  truncate table employee;
+
+  only data will be deleted permanently but table object remains exist.
+  
+  
+alter:
+`
+to alter the database object or to manage the databse object
+
+  it might me adding new columns
+  it might be changing the column datatype and sizes
+  it might be renaming the colomns
+  
+  it might be deleting the collumns.
+  
+  
+ on top of the exisitng databse object, if we want to perform any this
+ kind of operations, we should go for alter.
+ 
+ 
+add the column using alter:
+ 
+syntax:
+
+  alter <table> <tablename> add <colname> <datatype>(size);
+  
+ex:
+  alter table employee add empsal number(8,2);
+
+  table altered
+
+how can you rename the coloumn at alter level:
+
+
+syntax:
+
+  alter table <tablename> rename column <oldcolumname> to <newcolname>;
+
+ex: 
+  alter table employee rename column empsal to empsalary;
+  table altered.
+  
+  
+ how can we drop the column at alter level:
+ ```````
+ 
+ syntax:
+ 
+ ALTER TABLE table_name DROP COLUMN column_name;
+ 
+ eg: 
+ alter table employee drop column empsal;
+ 
+how can you modify the column datatype:
+```````
+
+alter table <tablename> modify columnname <newdatatype>(size)
+
+ex:
+`
+alter table employee modify empsalary number(6,2);
+
+
+how to create the user:
+
+  first get the conection from the sysdba
+  
+  conn as sysdba
+    username system/system
+	
+  sql:/> crete user <username> identfied by <password>;
+  
+  ex: sql:/> create user capg identified by capg;
+  
+  user created
+  
+  after you create the user, again conect to sysdba user
+  
+  conn as sysdba
+    username: system/system
+	
+  sql:/> grant connect,resource to capg;
+  
+  sql:/> conn 
+  username:capg/capg
+  connected
+dml:
+`
+data manipulation language
+
+ insert
+ update
+ delete
+ 
+using these commands we are able to perfrom following operations
+  
+   -insert the data
+   -update the data
+   -delete the data
+   
+ insert:
+```
+ syntax:
+ 
+  insert into <tableaname> values(value1,value2....value n);
+  
+  eg:
+ 
+  insert into student values(100,'ram');
+  
+ 
+error:
+``
+SQL> insert into student values('ram',100);
+insert into student values('ram',100)
+                           *
+ERROR at line 1:
+ORA-01722: invalid number
+   
+syntax of insert:
+``
+insert into <tablename>(colname1,colname2> values(value1,value2...)
+  
+  ex:
+
+insert into student(stname) values('capg');
+  
+ 
+syntax:
+``
+
+ insert into student values(&colname1,&colname2... ) 
+ 
+ eg:
+ `
+SQL> insert into student values(&stid,&stname);
+Enter value for stid: 101
+Enter value for stname: 'capg'
+old   1: insert into student values(&stid,&stname)
+new   1: insert into student values(101,'capg')
+
+1 row created.
+
+SQL> /
+Enter value for stid: 102
+Enter value for stname: 'kokata'
+old   1: insert into student values(&stid,&stname)
+new   1: insert into student values(102,'kokata')
+
+1 row created.
+
+SQL> /
+Enter value for stid: 103
+Enter value for stname: 'hyd'
+old   1: insert into student values(&stid,&stname)
+new   1: insert into student values(103,'hyd')
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * From student;
+
+      STID STNAME
+---------- --------------------
+       100 ram
+           capg
+       101 capg
+       102 kokata
+       103 hyd
+
+
+how to insert using select:
+``````
+syntax:
+
+ insert into <newtablename> select * From <existingtablename>;
+
+
+make sure: columns should be same count and as well as we should maintain
+same datatype(s).
+
+eg:
+
+  insert into emp select * From student;
+  
+  3 rows inserted
+  
+  
+update:
+`
+using update we can update the existing data based on condition or without
+condition depends on the requirement.
+
+
+syntax:
+  
+   update tablename set <colname> = <new value> [where condition];
+   
+ eg:
+   update student set stname='kolkata' where stid=102;
+   
+   1 row updated.
+   
+   if you didn't specify where condition , that udpate applicable for 
+   all the exisitng row(s).
+   
+   
+ update more than 1 column:
+ ````
+ 
+ syntax:
+ `
+ 
+  update <tablename> set colname1=value1,colname2=value2...
+  
+  update student set stid=104,stname='hyd' where stid=100;
+  1 row updated.
+  
+  
+  
+delete:
+`
+using this command we are allowed to delete the row(s) using condition
+or without condition.
+
+
+syntax:
+  delete from <tablename> [where condition]
+  
+eg:
+  delete from student where stid=104;
+  
+  
+   
+all these commands are belongs to dml commands, by default dml commands
+are not autocommited.
+
+if we want to commit permanently we have to pass the explicit command
+as 'commit'.
+
+if we want to rollback then we can pass explicit command as 'rollback'.
+
+for merge command follow the below link:
+```````
+https://www.oracletutorial.com/oracle-basics/oracle-merge/
+						
+	
+	
+
+constraints:===============================================================(21)
+============
+rule or ristriction on table data
+
+colum level
+table
+alter level
+
+1.not null--dont allow the null values, it can allow the dupliiicate values
+
+2.unique--dont allow duplicate values, it can allow null values
+
+3. check --based on the condition
+
+4.primary key--> not null+unique=
+
+
+5.forign key--> relationship based
+
+
+not null:(column level)
+-------
+create table emp(eid number(5) not null, ename varchar2(15), esal number(6,2));
+
+unique:(table level)
+=====
+
+primary key:
+==========
+create table emp4(eid number(5) primary key, ename varchar2(15), esal number(6,2));
+
+
+
+forign key:
+===========
+                             fk
+empid empname esal  eadd    deptno         
+1      x       900   hyd      10      
+2      y       100   hyd      20        
+3      z       700   hyd      10      
+4      a       600   hyd      30     
+5      b       100   hyd      10      
+6      c       900   hyd      30       
+7      d       600   hyd      20      
+8      e       500   hyd      10     
+9      f       400   hyd      20  
+
+
+dept
+pk
+deptno   dname      dloc
+
+10       admin       bnglr
+
+20        hr          hyd
+
+30        devlp       delhi
+
+
+
+joins:	
+
+
+********************************
+                JDBC
+				******************************
+
+jdbc:
+-----
+
+
+            jdbc API(application pragramming interface)
+java------------------->database
+
+jdbc-odbc, network protocal ,native driver, thin(pure driver) 
+
+
+0th: loading jar file
+
+5 steps:       String.class
+========
+
+1. load the driver class
+
+
+2. get the connection
+
+
+3. create statement
+
+
+4.execute
+
+
+5.close connection
+
+
+EG:
+---
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Test {
+public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	
+//	1.loading the driver class
+         
+                  Class.forName("oracle.jdbc.OracleDriver");
+//	2.get the connection
+ 
+               Connection conn= DriverManager.getConnection("jdbc:oracle:thin:@Localhost:1521:xe", "sindhu", "sindhu123");
+//	3.create statement
+               
+              Statement stmt =conn.createStatement();
+ 
+//	4.execute ddl: execute(),  dml: executeUpdate(), drl:executeQuery()
+    
+             // boolean result= stmt.execute("create table emp_xrg(eid number, ename varchar2(20))");
+             //int result=stmt.executeUpdate("insert into emp_xrg values(126,'bhargavi')");
+           // int result          =stmt.executeUpdate("update emp_xrg set eid='125' where ename='anuradha'");
+              //int result      =stmt.executeUpdate("delete from emp_xrg where eid=125");   
+             ResultSet re=stmt.executeQuery("SELECT * FROM EMP_XRG");
+             
+             while(re.next()) {
+            	 System.out.println(re.getInt(1)+"   "+re.getString("ename"));
+             }
+             
+//	5.close
+     conn.close();
+    // System.out.println("record deleted"+result);
+}
+}
+
+
+EG:
+===
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class Test {
+public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Enter your username");
+	String uname=sc.next();
+	System.out.println("Enter your password");
+	String pass=sc.next();
+	
+//	1.loading the driver class
+         
+                  Class.forName("oracle.jdbc.OracleDriver");
+//	2.get the connection
+ 
+               Connection conn= DriverManager.getConnection("jdbc:oracle:thin:@Localhost:1521:xe", "sathya", "sathya123");
+//	3.create statement
+               
+              PreparedStatement stmt =conn.prepareStatement("select * from users where username=? and password=?");
+                             stmt.setString(1, uname);
+                             stmt.setString(2, pass);
+ 
+//	4.execute ddl: execute(),  dml: executeUpdate(), drl:executeQuery()
+     
+             ResultSet re=stmt.executeQuery();
+             
+             if(re.next()) 
+            	 System.out.println("Login succuss");
+             else
+            	 System.out.println("Enter valid credentials");
+             
+//	5.close
+     conn.close();
+     sc.close();
+    
+	
+	
+}
+}
+
+
+
+
+
+
+
+
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
